@@ -1,0 +1,128 @@
+//
+   Created by rulyardiansyah on 1/18/2017.
+doctype html
+html.no-js(lang="")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    title DAKSA Design Repository
+    meta(name="description" content="Every single things related to DAKSA design should be stored inside this repository")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="Ruly Ardiansyah")
+    meta(name="theme-color" content="#262b39")
+    meta(name="apple-mobile-web-app-title" content="DAKSA - IT consultant")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="#262b39")
+    meta(name="msapplication-navbutton-color" content="#262b39")
+
+    // Favicon & Apple Touch Icon
+    link(rel="apple-touch-icon" href="http://192.168.1.28/pratpretprot/apple-touch-icon.png")
+    link(rel="shortcut icon" type="image/x-icon" href="http://192.168.1.28/pratpretprot/favicon.ico")
+
+    link(rel="stylesheet" href="http://192.168.1.28/pratpretprot/css/normalize.css")
+    link(rel="stylesheet" href="http://192.168.1.28/pratpretprot/css/main.css")
+    link(rel="stylesheet" href="http://192.168.1.28/pratpretprot/css/tracker.css")
+
+    script(src="http://192.168.1.28/pratpretprot/js/vendor/modernizr-2.8.3.min.js")
+
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+
+    // TRACKER HERO begins here
+    section#tracker-hero
+      h1 DAKSA Design Repo <span>Tracker</span>
+    // TRACKER HERO begins here
+
+    // TRACKER DETAIL begins here
+    section#tracker-detail
+      p This page shows you which sub-section whether completed or not.
+      ul#lists
+        li
+          img(src="img/home-icon-corporate-design.svg" alt="Corporate Design")
+          span Corporate Design
+          ul
+            li.status-ok Logo
+            li Visual Identity
+              ul
+                li.status-ok Colors Palette
+                li.status-ok Typography
+                li.status-no Imagery &amp; Illustration
+                li.status-no Usage &amp; Implementation
+            li Products
+              ul
+                li.status-ok SANDRA
+                li.status-ok EVA
+                li.status-no MARISA
+                li.status-ok CRISA
+                li.status-ok TROJAN
+            li Corporate Templates
+              ul
+                li.status-ok Document Templates
+                li.status-ok Presentation Templates
+                li.status-no Stationery
+                li.status-ok Email Signature
+                li.status-no Company Profile
+                li.status-ok Miscellaneous
+        li
+          img(src="img/home-icon-web-design.svg" alt="Web Design")
+          span Web Design
+          ul
+            li Grid System
+              ul
+                li.status-ok Installation &amp; Usage
+                li.status-ok Options
+            li Front-End
+              ul
+                li.status-ok Skeletons
+                li.status-no File Formats
+                li.status-no Performance Checklist
+                li.status-no Tools: Closure Compiler
+                li.status-no Tools: PageSpeed
+            li Primefaces Overrides
+              ul
+                li.status-no Inputs
+                li.status-no Buttons
+                li.status-no Datas
+                li.status-no Panels
+                li.status-no Overlays &amp; Messages
+        li
+          img(src="img/home-icon-mobile-design.svg" alt="Mobile Design")
+          span Mobile Design
+          ul
+            li Android Design
+              ul
+                li.status-no Components
+                li.status-no Patterns
+                li.status-no Usability
+                li.status-no Iconography
+                li.status-no Resources
+            li iOS Design
+              ul
+                li.status-ok Resolutions &amp; Displays
+                li.status-ok Iconography
+                li.status-ok Typography
+                li.status-no Components
+                li.status-no Resources
+    // TRACKER DETAIL ends here
+
+    footer
+      p DAKSA Design Repository was designed &amp; developed with care &amp; love.
+        small © 2016 - <span id="current-year"></span>. PT DAKSA.
+
+    // TOP BAR begins here
+    header#top-bar
+      .container
+        a(href="index.html")
+          img(src="img/daksa-repo-logo-with-hexagon.png" alt="DAKSA Design Repo")
+    // TOP BAR ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+    script window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    script.
+      var currentYear = new Date();
+      $("#current-year").append(currentYear.getFullYear());

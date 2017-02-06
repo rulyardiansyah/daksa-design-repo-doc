@@ -1,0 +1,67 @@
+//
+   Created by rulyardiansyah on 1/30/2017.
+
+//- WEB-DESKTOP - FRONT-END - skeletons.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 PageSpeed
+          p <a href="https://developers.google.com/speed/pagespeed/insights/">Page Speed Insights</a> measures the performance of a page for mobile devices and desktop devices. It fetches the url twice, once with a mobile user-agent, and once with a desktop-user agent.
+          p The PageSpeed Score ranges from 0 to 100 points. A higher score is better and a score of 85 or above indicates that the page is performing well. Please note that PageSpeed Insights is being continually improved and so the score will change as we add new rules or improve our analysis.
+          p PageSpeed Insights measures how the page can improve its performance on:
+          ul
+            li time to above-the-fold load: Elapsed time from the moment a user requests a new page and to the moment the above-the-fold content is rendered by the browser.
+            li time to full page load: Elapsed time from the moment a user requests a new page to the moment the page is fully rendered by the browser.
+          p However, since the performance of a network connection varies considerably, PageSpeed Insights only considers the network-independent aspects of page performance: the server configuration, the HTML structure of a page, and its use of external resources such as images, JavaScript, and CSS. Implementing the suggestions should improve the relative performance of the page. However, the absolute performance of the page will still be dependent upon a user’s network connection.
+          p Each suggestion is rated with a priority indicator to indicate its importance:
+          ul
+            li Red exclamation point
+              p Fixing this would have a measurable impact on page performance.
+            li Yellow exclamation point
+              p Consider fixing this if it is not a lot of work.
+            li Green check mark
+              p No significant issues found.
+
+        hr.article-separator
+
+        article
+          h2 How To Use PageSpeed?
+          p Simply go to <a href="https://developers.google.com/speed/pagespeed/insights/">this page</a>, then pasting in the link and click Analyze.
+          figure.auto
+            img(src="../../../img/web/tools-pagespeed-result.png" alt="Tools: PageSpeed")
+            figcaption Tools: PageSpeed
+          p You will see the score and the summary of your page. If you find a red or yellow exclamation item, then it is better to fix the issue(s) by following the given recommendation.
+          br
+          h4 Mobile-friendly Test
+          p Previously, the mobile-friendly test was included in PageSpeed. But, in several last months it was migrated. You can check whether your page is mobile-friendly or not by visiting <a href="https://search.google.com/search-console/mobile-friendly">this page</a>.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="tools-closure-compiler.html") Tools: Closure Compiler
+        nav.next-chapter.not-available
+          h4 Next chapter
+          a(href="#") None
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHLD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#front-end-tools-pagespeed").addClass("mm-selected");

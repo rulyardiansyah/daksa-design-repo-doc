@@ -1,0 +1,79 @@
+//
+   Created by rulyardiansyah on 12/28/2016.
+
+//- CORPORATE - prelude.pug
+doctype html
+html.no-js(lang="")
+  include ../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Prelude
+          blockquote
+            p Branding is the art of becoming knowable, likable, and trustable.
+            small John Jantsch
+          p This is the only reason why this entire section exists.
+
+        hr.article-separator
+
+        // COMPANYS NAME begins here
+        article#companys-name
+          h2 Companys' Name
+          p Our companys' name is <strong>PT DAKSA</strong>, or the least <strong>PT DAKSA (Data Aksara Sangkuriang)</strong>. From 2017 onward, it will be prohibited to just write down <strong>PT Data Aksara Sangkuriang</strong> as companys' name.
+        // COMPANYS NAME ends here
+
+        hr.article-separator
+
+        // COMPANYS TAGLINE begins here
+        article#companys-tagline
+          h2 Companys' Tagline
+          p Tagline is one of many attributes to branding that defines the essence &amp; personality of our company. Currently, there are two taglines that are available to be used in our corporate communication media.
+          blockquote
+            p Outstanding technology to enhance your business.
+            cite PT DAKSA (Data Aksara Sangkuriang)
+          p and,
+          blockquote
+            p We innovate. We create.
+            cite PT DAKSA (Data Aksara Sangkuriang)
+          p Just like a logo, tagline can be reformed if the context of the tagline itself were not relevant anymore.
+        // COMPANYS TAGLINE ends here
+
+        hr.article-separator
+
+        // PARTNERS JARGON begins here
+        article#partners-jargon
+          h2 Jargon (Internal use only)
+          p Beside the taglines, our company has jargon that can be used for internal purpose only.
+          blockquote
+            p Keep humble, Stay hustle.
+            cite PT DAKSA (Data Aksara Sangkuriang)
+          p Which described of the spirits of how our partners (employees) should act.
+        // PARTNERS JARGON ends here
+
+      footer.section-nav-chapter
+        nav.prev-chapter.not-available
+          h4 Prev chapter
+          a(href="#") None
+        nav.next-chapter
+          h4 Next chapter
+          a(href="logo.html") Logo
+
+    // NAVIGATION begins here
+    include ../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../_include/_footer
+
+  script.
+    $("#corporate-prelude").addClass("mm-selected");

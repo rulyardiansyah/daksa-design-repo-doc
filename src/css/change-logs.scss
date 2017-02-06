@@ -1,0 +1,138 @@
+/* =============================================
+DAKSA DESIGN REPO - HOME - CHANGE-LOGS
+============================================= */
+
+@import "_supports/colors";
+
+/* CHANGE-LOGS GLOBAL VARIABLES */
+$home-background: $daksa-white;
+$main-section-width-desktop: 88%;
+$main-section-max-width-desktop: 960px;
+
+body {
+  background-color: $home-background;
+  color: $daksa-cement;
+  text-align: center;
+  overflow-x: hidden;
+}
+section {
+  margin-bottom: 96px;
+}
+
+#change-logs-hero, #change-logs-detail, #top-bar .container {
+  width: $main-section-width-desktop;
+  max-width: $main-section-max-width-desktop;
+  margin: auto;
+}
+
+#change-logs-hero {
+  margin: 160px auto;
+  h1 {
+    span {
+      display: block;
+      width: 100%;
+      font-family: "AdobeClean-Regular", sans-serif;
+      font-size: 24px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+  }
+}
+
+#change-logs-detail {
+  table {
+    tr {
+    }
+    td {
+      text-align: left;
+      line-height: 160%;
+      vertical-align: top;
+      &:nth-child(1) {
+        min-width: 164px;
+      }
+      &[colspan] {
+        font-size: 24px;
+        text-align: center;
+        color: $daksa-light-grey;
+      }
+    }
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    padding-left: 0;
+  }
+  .label {
+    &.general { background-color: $daksa-cement; }
+    &.corporate { background-color: $daksa-cyan; }
+    &.web { background-color: $daksa-green-grass; }
+    &.mobile { background-color: $daksa-sunset; }
+  }
+}
+
+#top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: rgba(#ffffff, .92);
+  padding: 8px 24px 12px;
+  box-shadow: 0 1px 2px rgba(#000000, .24);
+  transition: all .2s ease-out;
+  img {
+    width: 64px;
+  }
+}
+
+/* FOOTER begins */
+footer {
+  background-color: $daksa-briquette;
+  padding: 36px 24px 48px;
+  text-align: left;
+  * {
+    font-size: 15px;
+  }
+  p {
+    text-align: center;
+    line-height: 160%;
+    small {
+      margin-top: 8px;
+      font-size: 80%;
+      display: block;
+    }
+    span {
+      font-size: inherit;
+    }
+  }
+}
+/* FOOTER ends */
+
+
+
+/* ====================
+MEDIA QUERIES - TABLET
+==================== */
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 36px 24px 48px;
+    * {
+      font-size: 14px;
+    }
+    nav {
+      width: 100%;
+      margin: auto;
+      & > ul {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        & > li {
+          width: 25%;
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../../../../../../css/_supports/colors";
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient(rgba(#000000, .48), rgba(#000000, 0));
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+body {
+	background-color: $daksa-dark-slate;
+}
+
+.reveal {
+	blockquote {
+		padding: 20px;
+		p {
+			font-family: "RobotoSlab-Light", serif;
+		}
+	}
+	p {
+		margin: 0 0 20px 0;
+	}
+}

@@ -1,0 +1,39 @@
+//
+   Created by rulyardiansyah on 12/29/2016.
+
+//- CORPORATE - VISUAL IDENTITY - usage-implementation.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Usage &amp; Implementation
+          p Work in progress.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="imagery.html") Imagery
+        nav.next-chapter
+          h4 Next chapter
+          a(href="../products/eva.html") EVA
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#visual-identity-usage-implementation").addClass("mm-selected");

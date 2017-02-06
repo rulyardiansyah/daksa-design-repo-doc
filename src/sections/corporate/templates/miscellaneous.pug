@@ -1,0 +1,70 @@
+//
+   Created by rulyardiansyah on 1/4/2017.
+
+//- CORPORATE - TEMPLATES - miscellaneous.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Miscellaneous
+          p Uncategorized design &amp; web templates that may be useful for upcoming or ongoing projects (or even non-projects).
+
+        hr.article-separator
+
+        article
+          h2 Server Index Template
+          p This template can be used as index page for home directory of a service, app, or server to indicate that the respective service, app, or server is up and running.
+          p You can preview it <a href="../../../resources/corporate/miscellaneous-server-index-template" target="_blank">here</a>.
+          figure.auto
+            img(src="../../../img/corporate/miscellaneous-server-index-template.png" alt="DAKSA template - Server index template")
+            figcaption DAKSA template - Server index template
+          .download-section
+            h4 Download
+            p
+              a.download-link.alt(href="../../../resources/corporate/miscellaneous-server-index-template.zip") Server Index Template (.psd)
+                span (230 KB)
+              a.download-link.alt(href="../../../resources/corporate/miscellaneous-server-index-template-web.zip") Server Index Template (web)
+                span (1.33 MB)
+
+        hr.article-separator
+
+        article
+          h2 Host-to-host Certification Page
+          p This web template...
+          figure.auto
+            img(src="../../../img/corporate/miscellaneous-host-to-host-certification-page.png" alt="DAKSA template - Host-to-host certification")
+            figcaption DAKSA template - Host-to-host certification
+          .download-section
+            h4 Download
+            p
+              a.download-link.alt(href="../../../resources/corporate/miscellaneous-host-to-host-certification-page.zip") Host-to-host Certification Page (web)
+                span (3.94 MB)
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="company-profile.html") Company Profile
+        nav.next-chapter.not-available
+          h4 Next chapter
+          a(href="#") None
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#corporate-templates-miscellaneous").addClass("mm-selected");

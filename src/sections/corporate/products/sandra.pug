@@ -1,0 +1,86 @@
+//
+   Created by rulyardiansyah on 12/30/2016.
+
+//- CORPORATE - PRODUCTS - sandra.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 SANDRA (Switching &amp; Routing Agent)
+          p Every assets included in this page is a marketing kit for <strong>SANDRA (Switching &amp; Routing Agent)</strong>.
+
+        hr.article-separator
+
+        article
+          h2 Products Name
+          p It has to be written as <strong>SANDRA</strong>, all caps, or <strong>SANDRA (Switching &amp; Routing Agent)</strong>. It also recommended to use additional information after it, such as "by <strong>DAKSA</strong>" or "product of <strong>DAKSA</strong>".
+
+        hr.article-separator
+
+        article
+          h2 Concept &amp; Sketches
+          p This is the product icon's transformation for SANDRA. From early sketches to final form.
+          .product-showcase
+            figure
+              img(src="../../../img/corporate/product-sandra-concept-sketches.png" alt="DAKSA Product - SANDRA concept & sketches")
+              figcaption Concept &amp; sketches
+          p The final sketch and final form.
+          .product-showcase
+            figure
+              img(src="../../../img/corporate/product-sandra-final-sketch.png" alt="DAKSA Product - SANDRA final sketch")
+              figcaption Final sketch
+            figure
+              img(src="../../../img/corporate/product-sandra-final-form.png" alt="DAKSA Product - SANDRA final form")
+              figcaption Final form
+          p These are several variation of sizes can be directly used on web page.
+          .product-showcase.smaller
+            figure
+              img(src="../../../img/corporate/product-sandra-final-form-default-size.png" alt="DAKSA Product - SANDRA final form default size")
+              figcaption Default size
+            figure
+              img(src="../../../img/corporate/product-sandra-final-form-smaller-size.png" alt="DAKSA Product - SANDRA final form smaller size")
+              figcaption Smaller size
+          p Our Design Team has provided an alternative version of SANDRA product icon and the icon-only version.
+          .product-showcase.smaller
+            figure
+              img(src="../../../img/corporate/product-sandra-final-form-alt.png" alt="DAKSA Product - SANDRA final form alternative")
+              figcaption Alternative version
+            figure
+              img(src="../../../img/corporate/product-sandra-final-form-icons.png" alt="DAKSA Product - SANDRA final form icons")
+              figcaption SANDRA in icons
+
+        article
+          .download-section
+            h4 Download SANDRA Marketing Kit
+            p This marketing kit includes product icon in high-res, smaller sizes, alternative version, and icons.
+            a.download-link.alt(href="../../../resources/corporate/product-sandra-marketing-kit.zip") SANDRA Marketing Kit
+              span (365 KB)
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="eva.html") EVA
+        nav.next-chapter
+          h4 Next chapter
+          a(href="marisa.html") MARISA
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#products-sandra").addClass("mm-selected");

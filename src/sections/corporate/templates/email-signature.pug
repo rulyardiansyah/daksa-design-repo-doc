@@ -1,0 +1,72 @@
+//
+   Created by rulyardiansyah on 1/3/2017.
+
+//- CORPORATE - TEMPLATES - email-signature.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Email Signature
+          p Uniformity and ubiquity in email signature is one of many ways to make our identity look more professional. Please make sure your email signature following this guideline below.
+
+        hr.article-separator
+
+        article
+          h2 How to setup
+          p In this page you will be guided how to setup our corporate email signature just like an example as you can see below.
+          figure.auto
+            img(src="../../../img/corporate/email-signature.png" alt="DAKSA email signature")
+            figcaption Corporate email signature
+          h3 Setup on browser
+          p Here are the steps of how to change our email signature on browser.
+          ol
+            li First of all, please download the .txt file below.
+            li Inside your DAKSA email page, get into <strong>Settings</strong> page by clicking the gear icon on top right.
+            li On <strong>Signature</strong> text field, right click on it, and choose Inspect Element. If you already had a signature before, please remove it first.
+            li Find a <code>&lt;div&gt;</code> tag with <code>class="gmail_signature"</code> <strong>OR</strong> a <code>&lt;div&gt;</code> tag with <code>aria-label="Signature"</code>.
+            li Copy the HTML code snippet you just downloaded and paste it in inside that <code>&lt;div&gt;</code> tag.
+            li Adjust the information according your personal data.
+            li Don't forget to click <strong>Save Changes</strong>.
+          .download-section
+            h4 Download Email Signature (.txt)
+            p Use this if you were using email primarily on browser.
+            p
+              a.download-link.alt(href="../../../resources/corporate/email-signature-txt.zip") Email Signature (.txt)
+                span (1.26 KB)
+          h3 Setup on email desktop client
+          p If you were running a third-party email desktop client, you can simply copy &amp; paste the content of the docx file below to signature settings/preferences.
+          .download-section
+            h4 Download Email Signature (.docx)
+            p Use this if you were using email primarily on third-party desktop application.
+            p
+              a.download-link.alt(href="../../../resources/corporate/email-signature-docx.zip") Email Signature (.docx)
+                span (18.8 KB)
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="stationery.html") Stationery
+        nav.next-chapter
+          h4 Next chapter
+          a(href="company-profile.html") Company Profile
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#corporate-templates-email-signature").addClass("mm-selected");

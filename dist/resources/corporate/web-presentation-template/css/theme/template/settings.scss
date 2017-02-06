@@ -1,0 +1,45 @@
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+@import "../../../../../../../css/_supports/colors";
+@import "../../../../../../../css/_supports/typefaces";
+
+// Background of the presentation
+$backgroundColor: $daksa-darker-slate;
+
+// Primary/body text
+$mainFont: 'AdobeClean-Light', sans-serif;
+$mainFontSize: 24px;
+$mainColor: #eee;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'PFHandbookPro-Bold', sans-serif;
+$headingColor: #eee;
+$headingLineHeight: 160%;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.8em;
+$heading2Size: 2.4em;
+$heading3Size: 2.0em;
+$heading4Size: 1.6em;
+
+// Links and actions
+$linkColor: #13DAEC;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}

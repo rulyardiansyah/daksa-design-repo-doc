@@ -1,0 +1,58 @@
+//
+   Created by rulyardiansyah on 12/29/2016.
+
+//- CORPORATE - VISUAL IDENTITY - imagery.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Imagery &amp; Illustration
+          p The brand imagery creation involves a system that allows for the combination of aspirational, conceptual imagery and dynamic lifestyle photography that is authentic, meaningful, and immersive.
+          p  Three-tier imagery system: <strong>Abstract concept</strong>, <strong>Reportage lifestyle photography</strong>, &amp; <strong>Conceptual illustration</strong>.
+
+        hr.article-separator
+
+        article
+          h2 Abstract Concept
+          p Work in progress.
+
+        hr.article-separator
+
+        article
+          h2 Reportage lifestyle photography
+          p Work in progress.
+
+        hr.article-separator
+
+        article
+          h2 Conceptual Illustration
+          p Work in progress.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="typography.html") Typography
+        nav.next-chapter
+          h4 Next chapter
+          a(href="usage-implementation.html") Usage &amp; Implementation
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#visual-identity-imagery").addClass("mm-selected");

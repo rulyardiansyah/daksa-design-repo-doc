@@ -1,0 +1,86 @@
+//
+   Created by rulyardiansyah on 12/30/2016.
+
+//- CORPORATE - PRODUCTS - mobibanks.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 MOBIBANKS (Mobile &amp; Internet Banking System)
+          p Every assets included in this page is a marketing kit for <strong>MOBIBANKS (Mobile &amp; Internet Banking System)</strong>.
+
+        hr.article-separator
+
+        article
+          h2 Products Name
+          p It has to be written as <strong>MOBIBANKS</strong>, all caps, or <strong>MOBIBANKS (Mobile &amp; Internet Banking System)</strong>. It also recommended to use additional information after it, such as "by <strong>DAKSA</strong>" or "product of <strong>DAKSA</strong>".
+
+        hr.article-separator
+
+        article
+          h2 Concept &amp; Sketches
+          p This is the product icon's transformation for MOBBANKS. From early sketches to final form.
+          .product-showcase
+            figure
+              img(src="../../../img/corporate/product-mobibanks-concept-sketches.png" alt="DAKSA Product - MOBIBANKS concept & sketches")
+              figcaption Concept &amp; sketches
+          p The final sketch and final form.
+          .product-showcase
+            figure
+              img(src="../../../img/corporate/product-mobibanks-final-sketch.png" alt="DAKSA Product - MOBIBANKS final sketch")
+              figcaption Final sketch
+            figure
+              img(src="../../../img/corporate/product-mobibanks-final-form.png" alt="DAKSA Product - MOBIBANKS final form")
+              figcaption Final form
+          p These are several variation of sizes can be directly used on web page.
+          .product-showcase.smaller
+            figure
+              img(src="../../../img/corporate/product-mobibanks-final-form-default-size.png" alt="DAKSA Product - MOBIBANKS final form default size")
+              figcaption Default size
+            figure
+              img(src="../../../img/corporate/product-mobibanks-final-form-smaller-size.png" alt="DAKSA Product - MOBIBANKS final form smaller size")
+              figcaption Smaller size
+          p Our Design Team has provided an alternative version of MOBIBANKS product icon and the icon-only version.
+          .product-showcase.smaller
+            figure
+              img(src="../../../img/corporate/product-mobibanks-final-form-alt.png" alt="DAKSA Product - MOBIBANKS final form alternative")
+              figcaption Alternative version
+            figure
+              img(src="../../../img/corporate/product-mobibanks-final-form-icons.png" alt="DAKSA Product - MOBIBANKS final form icons")
+              figcaption MOBIBANKS in icons
+
+        article
+          .download-section
+            h4 Download MOBIBANKS Marketing Kit
+            p This marketing kit includes product icon in high-res, smaller sizes, alternative version, and icons.
+            a.download-link.alt(href="../../../resources/corporate/product-mobibanks-marketing-kit.zip") MOBIBANKS Marketing Kit
+              span (365 KB)
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="sandra.html") SANDRA
+        nav.next-chapter
+          h4 Next chapter
+          a(href="marisa.html") MARISA
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#products-mobibanks").addClass("mm-selected");

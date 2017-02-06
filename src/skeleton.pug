@@ -1,0 +1,138 @@
+//
+   Created by rulyardiansyah on 12/2/2016.
+
+//- DEV SKELETON index.pug
+doctype html
+html.no-js(lang="")
+  include sections/_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        h1 This is hero title
+        h2 This is sub-sections title
+        h3 This is chapters title
+        h4 This is sub-chapters title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.
+        p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <a href="#">officia deserunt</a> mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        blockquote
+          p Ut enim ad minim veniam, quis nostrud exercitation ullaco laboris eus donos.
+          cite Someone, CTO of Kelapakkelapak
+        p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        figure
+          img(src="img/sample-image.png" alt="Sample image")
+          figcaption This is a caption of image
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+          ol
+            li Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            li Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            li Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            li Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+          ul
+            li Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            li Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            li Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            li Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+        table.table
+          caption Sample table
+          thead
+            tr
+              th #
+              th Name
+              th(data-title="Data 01", data-breakpoints="xs sm") Data 01
+              th(data-title="Data 02", data-breakpoints="xs sm") Data 02
+              th(data-title="Action", data-breakpoints="xs sm md") Action
+          tbody
+            tr
+              td 1
+              td Eaque ipsa quae
+              td Illo inventore veritatis
+              td Architecto beatae vitae
+              td Beatae vitae dicta
+            tr
+              td 2
+              td Eaque ipsa quae
+              td Illo inventore veritatis
+              td Architecto beatae vitae
+              td Beatae vitae dicta
+            tr
+              td 3
+              td Eaque ipsa quae
+              td Illo inventore veritatis
+              td Architecto beatae vitae
+              td Beatae vitae dicta
+            tr
+              td 4
+              td Eaque ipsa quae
+              td Illo inventore veritatis
+              td Architecto beatae vitae
+              td Beatae vitae dicta
+            tr
+              td 5
+              td Eaque ipsa quae
+              td Illo inventore veritatis
+              td Architecto beatae vitae
+              td Beatae vitae dicta
+            tr
+              td 6
+              td Eaque ipsa quae
+              td Illo inventore veritatis
+              td Architecto beatae vitae
+              td Beatae vitae dicta
+        p This is a sample of <code>code preview</code> in a paragraph.
+        pre.
+          // Hello
+          function sampleFunction() {
+            console.log("Hi there!");
+          }
+        a.download-link(href="#") Download Filename
+          span (128 KB)
+        a.download-link(href="#").alt Download Filename
+          span (128 KB)
+        a.download-link(href="#").simplified Download Filename
+          span (128 KB)
+        form
+          input(type="text", placeholder="type something here...")
+          input(type="password", placeholder="type something here...")
+          label
+            input(type="radio", name="sample-radio", checked)
+            | Male
+          label
+            input(type="radio", name="sample-radio")
+            | Female
+          textarea(placeholder="type something here...")
+          label
+            input(type="checkbox", name="sample-checkbox", value="A", checked)
+            | Option A
+          label
+            input(type="checkbox", name="sample-checkbox", value="B")
+            | Option B
+          select
+            optgroup(label="Group 01")
+              option(value="A") Option A
+              option(value="B") Option B
+              option(value="C") Option C
+              option(value="D") Option D
+            optgroup(label="Group 02")
+              option(value="E") Option E
+              option(value="F") Option F
+              option(value="G") Option G
+          button Click Me
+
+
+      // NAVIGATION begins here
+      include sections/_include/_menu
+      // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+    include sections/_include/_footer
+

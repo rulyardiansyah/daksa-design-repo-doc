@@ -1,0 +1,229 @@
+//
+   Created by rulyardiansyah on 1/10/2017.
+
+//- MOBILE DESIGN - iOS - resolutions-displays.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Resolutions &amp; Displays
+          p In Android, we have <strong>density-independent pixels (dp)</strong>, while in iOS we use <strong>point (pt)</strong> as the standard unit. The ratio and calculation in iOS is much simpler compare to Android.
+
+        hr.article-separator
+
+        article
+          h2 Screen Resolutions
+          p Before we dive deeper, here are all the existing devices with its screen resolution.
+          table.table
+            caption iOS Device Screen Resolution
+            thead
+              tr
+                th Device
+                th Display Type
+                th Portrait Size (px)
+                th Landscape Size (px)
+            thead.sub-header
+              tr
+                th(colspan="4") iPhone Lines
+            tbody
+              tr
+                td iPhone 6+
+                  span.td-additional-info 6+, 6S+
+                td Retina HD
+                td 1080 x 1920
+                td 1920 x1080
+              tr
+                td iPhone 6
+                  span.td-additional-info 6, 6S
+                td Retina
+                td 750 x 1334
+                td 1334 x 750
+              tr
+                td iPhone 5, SE
+                  span.td-additional-info 5, 5S, 5C, SE
+                td Retina
+                td 640 x 1136
+                td 1136 x 640
+              tr
+                td iPhone 4
+                  span.td-additional-info 4, 4S
+                td Retina
+                td 640 x 960
+                td 960 x 640
+              tr
+                td iPhone
+                  span.td-additional-info 1<sup>st</sup>, 2<sup>nd</sup> &amp; 3<sup>rd</sup> Generation
+                td Standard
+                td 320 x 480
+                td 480 x 320
+            thead.sub-header
+              tr
+                th(colspan="4") iPad Lines
+            tbody
+              tr
+                td iPad Air
+                  span.td-additional-info 1<sup>st</sup> &amp; 2<sup>nd</sup> Generation
+                td Retina
+                td 1536 x 2048
+                td 2048 x 1536
+              tr
+                td iPad Retina
+                  span.td-additional-info 3<sup>rd</sup> &amp; 4<sup>th</sup> Generation
+                td Retina
+                td 1536 x 2048
+                td 2048 x 1536
+              tr
+                td iPad Pro
+                td Retina
+                td 2048 x 2732
+                td 2732 x 2048
+              tr
+                td iPad Mini
+                  span.td-additional-info 2<sup>nd</sup> &amp; 3<sup>rd</sup> Generation
+                td Retina
+                td 1536 x 2048
+                td 2048 x 1536
+              tr
+                td iPad Mini
+                  span.td-additional-info Mini 1<sup>st</sup> Generation
+                td Standard
+                td 768 x 1024
+                td 1024 x 768
+              tr
+                td iPad
+                  span.td-additional-info 1<sup>st</sup> &amp; 2<sup>nd</sup> Generation
+                td Standard
+                td 768 x 1024
+                td 1024 x 768
+
+        hr.article-separator
+
+        article
+          h2 Points &amp; Pixels Relation
+          p Pixels are the smallest physical element that we can control on a digital display. The more pixels can be fitted into a specific screen size, the higher the PPI (pixels-per-inch), and the clearer the rendered content becomes.
+          p Points are a resolution-independent measurement. Depending on the screens pixel density, a point can contain multiple pixels (e.g., 1 pt contains 2 x 2 pixels on a regular retina display).
+          p When you are designing for various display types, you should think in points, but design in pixels. This means you will still need to export all your assets in 3 different resolutions, no matter in which resolution you are designing your app.
+        br
+        article.note
+          h4 Note
+          p As long as it is not stated otherwise (by appending "px" to a value), this guide always refers to points when it comes to specific dimensions. If you need the value in pixels, just multiply by 2 for Retina screens or by 3 for Retina HD screens.
+        br
+        table.table
+          caption iOS Device Screen Sizes
+          thead
+            tr
+              th Device
+              th Assets Resolution
+              th PPI
+              th Display Size
+          thead.sub-header
+            tr
+              th(colspan="4") iPhone Lines
+          tbody
+            tr
+              td iPhone 6+
+                span.td-additional-info 6+, 6S+
+              td @3x
+              td 401
+              td 5.5″
+            tr
+              td iPhone 6
+                span.td-additional-info 6, 6S
+              td @2x
+              td 326
+              td 4.7″
+            tr
+              td iPhone 5, SE
+                span.td-additional-info 5, 5S, 5C, SE
+              td @2x
+              td 326
+              td 4.0″
+            tr
+              td iPhone 4
+                span.td-additional-info 4, 4S
+              td @2x
+              td 326
+              td 3.5″
+            tr
+              td iPhone
+                span.td-additional-info 1<sup>st</sup>, 2<sup>nd</sup> &amp; 3<sup>rd</sup> Generation
+              td @1x
+              td 163
+              td 3.5″
+          thead.sub-header
+            tr
+              th(colspan="4") iPad Lines
+          tbody
+            tr
+              td iPad Air
+                span.td-additional-info 1<sup>st</sup> &amp; 2<sup>nd</sup> Generation
+              td @2x
+              td 264
+              td 9.7″
+            tr
+              td iPad Retina
+                span.td-additional-info 3<sup>rd</sup> &amp; 4<sup>th</sup> Generation
+              td @2x
+              td 264
+              td 9.7″
+            tr
+              td iPad Pro
+              td @2x
+              td 264
+              td 12.9″
+            tr
+              td iPad Mini
+                span.td-additional-info 2<sup>nd</sup> &amp; 3<sup>rd</sup> Generation
+              td @2x
+              td 326
+              td 7.9″
+            tr
+              td iPad Mini
+                span.td-additional-info Mini 1<sup>st</sup> Generation
+              td @1x
+              td 163
+              td 7.9″
+            tr
+              td iPad
+                span.td-additional-info 1<sup>st</sup> &amp; 2<sup>nd</sup> Generation
+              td @1x
+              td 132
+              td 9.7″
+
+
+        hr.article-separator
+
+        article
+          h2 Downsampling on Retina HD Device(s)
+          p Rendered pixels and physical pixels are equal on all iOS devices, with one exception: the Retina HD devices, such as iPhone 6 Plus &amp; iPhone 6s Plus (and this list may be extended in near future). Because its screen has a lower pixel resolution than what would be a natural @3x resolution, the rendered content is automatically resized to approximately 87% of the original size (from 2208 x 1242 pixels to fit the display resolution of 1920 x 1080 pixels).
+          figure.auto
+            img(src="../../../img/mobile/ios/ios-downsampling.png" alt="iOS Downsampling")
+
+      footer.section-nav-chapter
+        nav.prev-chapter.not-available
+          h4 Prev chapter
+          a(href="prelude") Prelude
+        nav.next-chapter
+          h4 Next chapter
+          a(href="iconography.html") Iconography
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#ios-design-resolutions-displays").addClass("mm-selected");

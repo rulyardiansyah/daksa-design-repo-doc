@@ -1,0 +1,253 @@
+//
+   Created by rulyardiansyah on 1/30/2017.
+
+//- WEB-DESKTOP - FRONT-END - file-formats.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 File Formats
+          p Sometimes, picking the right font &amp; image formats on the web is a tricky thing to do. So many aspects to consider. This sub-section will provide you with related informations to get the best performance for web design and development.
+
+        hr.article-separator
+
+        article
+          h2 Font Formats
+          p EOT, TTF, WOFF, SVG, WOFF2. There are so many choices. Unfortunately, despite the huge variety of formats, there isn’t a single one that works in all browsers. What does this mean? That you'll have to make use of multiple font formats to deliver a consistent experience.
+          table#font-formats-browser-support-table
+            caption Font formats supports by major browsers.
+            thead
+              tr
+                th
+                th EOT
+                th OTF/TTF
+                th WOFF
+                th WOFF2
+                th SVG
+            tbody
+              tr
+                td IE 8 - 11
+                td ✔
+                td
+                td
+                td
+                td
+              tr
+                td IE 9 - 11
+                td ✔
+                td ✔
+                td ✔
+                td
+                td
+              tr
+                td Edge 12 - 14
+                td
+                td ✔
+                td ✔
+                td
+                td
+              tr
+                td Firefox 40 - 45
+                td
+                td ✔
+                td ✔
+                td ✔
+                td
+              tr
+                td Chrome 43 - 49
+                td
+                td ✔
+                td ✔
+                td ✔
+                td
+              tr
+                td Safari 8 - 9
+                td
+                td ✔
+                td ✔
+                td
+                td ✔
+              tr
+                td Opera 32 - 35
+                td
+                td ✔
+                td ✔
+                td ✔
+                td
+              tr
+                td iOS Safari 8.4 - 9.1
+                td
+                td ✔
+                td ✔
+                td
+                td ✔
+              tr
+                td Chrome for Android 46+
+                td
+                td ✔
+                td ✔
+                td ✔
+                td
+          p For more comprehensive informations, please go to <a href="http://caniuse.com/#search=font-face" target="_blank">this page</a>
+          p Now, let's brush up on some basics and take a closer look at the different font formats in use on the Web.
+          br
+          h4 TrueType Font (TTF)
+          figure
+            img(src="../../../img/web/file-formats-font-ttf.png" alt="Font Format - TTF")
+          p The TrueType font format was developed by Apple and Microsoft as a response to the PostScript font format. TTF has long been the most common format for fonts on Mac and Windows operating systems. All major browsers have supported it. However, IE8 has no support for TTF; and starting with IE9 it is only partially supported as the fonts must be set to "installable".
+          p TTF allows for the most basic type of digital rights management – an embeddable flag that specifies if the author allows embedding of the font file into PDF files and websites. There are some tools that allow modifying this flag, which is one of the major issues about the TTF format. Another drawback is that TTF/OTF fonts are not compressed and, as a result, they have a larger file size.
+          br
+          h4 OpenType (OTF)
+          figure
+            img(src="../../../img/web/file-formats-font-otf.png" alt="Font Format - OTF")
+          p OpenType is the evolution of TTF. It is the result of a joint effort between Adobe and Microsoft. OpenType fonts contain the screen and printer font data in one component. OTF has several exclusive capabilities, including support for multiple platforms and expanded character sets. OTF fonts can be used by Macintosh and Windows operating systems.
+          p OTF also permits storage of up to 65,000 characters. This additional space gives designers the freedom to include add-ons such as small caps, old style figures, alternate characters and other extras that previously had to be distributed as separate fonts.
+          br
+          h4 Embedded Open Type (EOT)
+          figure
+            img(src="../../../img/web/file-formats-font-eot.png" alt="Font Format - EOT")
+          p EOT fonts were designed by Microsoft to be fonts used on the web. It is an attempt to address the copyright shortcomings of TTF and OTF when publishing on the web. EOT uses a Microsoft tool to create a font from existing TTF/OTF fonts. Compression and subsetting make the font files smaller. Subsetting provides some copyright protection, but EOT also uses encryption for further protection. Sounds promising? Yup, but EOT format is only supported by Internet Explorer.
+          br
+          h4 Web Open Font Format (WOFF)
+          figure
+            img(src="../../../img/web/file-formats-font-woff.png" alt="Font Format - WOFF")
+          p WOFF is basically OTF or TTF with metadata and compression supported by all major browsers. It was created to live on the web. It is the result of collaboration by the Mozilla Foundation, Microsoft, and Opera Software. Because fonts are compressed, they load faster. Metadata allows for the inclusion of license data within the font file to address copyright issues. It is a World Wide Web Consortium Recommendation and is clearly the future of font formats.
+          p WOFF2 is the next generation of WOFF. The WOFF2 format offers a 30% average compression gain over the original WOFF. Because it still just a recommended upgrade, it does not have the wide support of WOFF.
+          br
+          h4 Scalable Vector Graphics font (SVG)
+          figure
+            img(src="../../../img/web/file-formats-font-svg.png" alt="Font Format - SVG")
+          p SVG fonts are defined using the SVG's ‘font’ element. These fonts contain the glyph outlines as standard SVG elements and attributes as if they were a single vector object in the SVG image. The greatest drawback to SVG fonts is the lack of font-hinting. Font hinting is extra information embedded to render small font sizes with quality and legibility. Also, SVG is not great for body text. Since text selection is broken on Safari, Safari Mobile, and Chrome, you cannot select individual characters, words, or any custom selection. You can only select the whole row or paragraph of text.
+          p However, if you are targeting iPhone and iPad users, SVG fonts are your only choice. This is the only file format allowed by version 4.1 and below of Safari for iOS.
+
+        hr.article-separator
+
+        h2 Image Formats
+        p The first thing you need to understand about image formats is the difference between raster and vector. Raster photos are put together by a set of pixels, or singular blocks, to generate an image. The most popular image formats - JPGs, GIFs, and PNGs - are raster images. Every picture found online or in print falls under this category.
+        p Pixels possess a definite proportion determined by their quality (high-res or low-res). When they are expanded to fill up space they're not originally meant to fit in, they distort. This leads to a fuzzy or unclear image. It’s impossible to resize a raster image without compromising its resolution. Because of this, it's highly recommended to save and store raster images in the exact sizes meant for the image’s application.
+        p On the other hand, vector images are a lot more flexible since proportionate formulas are used instead of pixels. Format files like EPS, AI, and PDF are ideal for creating images that need repeated resizing. Logo and brand images are often created as a vector. The great thing about vectors is their ability to be resized as tiny as a post stamp or as huge as a billboard ad without compromising image quality.
+        p In terms of compression, all image files fall under two main categories: lossy and lossless. When uncompressed, lossy image formats lose some of the original data, and therefore come out with lower quality than the original. Lossless image formats, on the other hand, save a precise pixel-by-pixel rendering of the image to preserve image quality. However, the process demands more space.
+        br
+        h4 JPG
+        p JPEG, aka JPG, stands for Joint Photographic Experts Group. Since its conception in 1994, a JPG file is considered the standard graphic file format. It's arguably the most popular image format online.
+        p JPG files are lossy. This means a ton of information is lost from the original photo once it becomes a JPG file. This format gets rid of majority of the information to be able to save the image into a small file. This also means, to some extent, the quality of the original image is diminished.
+        p Nearly every digital camera uses the JPG format. Users can take pictures and save them as JPG files. Because the file is smaller, JPGs are extremely web-friendly. They don’t take up a lot of room, and only calls for a minimum transfer time. Also, JPGs are less grainy than GIFs.
+        p Use JPGs for photos and images that are packed with countless colors. The file format relies on an intricate compression algorithm that lets users produce smaller sized graphics by reducing the quality of the image.
+        p JPGs are not suitable for photographs with text, sizeable blocks of solid shades, and basic shapes with sharp edges. When the photo is compacted, the text, color, or edge may turn fuzzy. This results in an image that isn't as crisp as it should be if it's saved using a different format.
+        p Benefits of JPGs:
+        ul
+          li Feature 24-bit color, with as much as 16 million different colors and color combinations
+          li Possess rich, vibrant colors ideal for photos that require razor focus on color detail
+          li Are the most widely recognized and accepted image format
+          li Work well for most operating systems
+        p Downsides of JPEGs:
+        ul
+        li Have the tendency to shed off a great deal of information
+        li May develop artifacts following a compression
+        li Cannot be animated
+        br
+        h4 GIF
+        p GIF stands for Graphics Interchange Format. It cuts down the number of colors (potentially thousands to hundreds of thousands) in an image down to 256. Unlike JPGs, GIFs support transparency. They possess the unique ability to display a series of images, much like videos, referred to as an animated GIF. The sequence of individual GIF images linked together systematically creates an action or an animation.
+        p GIFs, similar to JPGs, also feature the ability to load in portions on websites. These graphics, called interlaced GIFs, are generally a bit bigger than regular GIFs. Their unique ability is to enable a GIF photo to be partly seen as it loads on a page. Its interlacing characteristic gives the impression of fast loading visuals. When GIFs are being loaded on a browser, the first GIF to appear is usually blurry and unclear. However, as the data are downloaded, the graphic becomes clearer and more defined.
+        p A GIF file is lossless, and therefore, more efficient in compressing graphics with a solitary shade. However, its quality is not as good when it comes to crisp and detailed photos. GIFs can be utilized efficiently for limited-color graphics, like logos and charts, or for visuals where transparency is essential. Avoid using GIFs for full-color product images and portraits where color variations are necessary.
+        p Use GIF format for graphics that feature a small, preset quantity of colors. The data compression algorithm for this format is much less intricate than for JPGs. The format is not made for photographic images or visuals with gradient shades. Since a GIF file has a small number of colors, photographs and gradients saved as such will turn out with obvious pixelation.
+        p This particular image format is relatively old. In 2012, it celebrated its silver anniversary with the introduction of GIFs. And though the format is still widely used, designers tend to set it aside in favor of the PNG format.
+        p Benefits of GIF:
+        ul
+          li Supports transparency
+          li Performs modest animations
+          li Features lossless quality
+          li Works well for graphics with restricted colors
+        p Downsides of GIF:
+        ul
+          li Limits graphics to only 256 colors
+          li Considered to be somewhat outdated compared to other formats
+        br
+        h4 PNG
+        p PNG stands for Portable Network Graphics. It is an image format compression that, at some point, is expected to replace the GIF format. Unlike the latter, PNG was created by an Internet panel specifically to be patent-free. PNGs also offer a variety of upgrades and better features when compared to GIFs.
+        p But similar to a GIF, a PNG file is compressed in a lossless manner. It's not meant to replace a JPG file, but rather enables the user to make a trade-off between the size of the file and the quality of the image when it's compressed. In general, a graphic saved in a PNG format is usually between 10 and 30% more compressed than an image saved in a GIF format.
+        p Like a JPG, a PNG file is useless in terms of animation. However, it's extensible. Software developers can create versions of PNGs that have a series of scriptable graphics. With its ability to host layered colors, PNG files are arguably the best option for photos going through the editing process. Aside from being lossless, PNGs are also open-source. They can also be created using a transparent background.
+        p The PNG format was created as an alternative to the GIF format when it seemed that GIFs would be subjected to a royalty fee. And similar to them, PNGs are also unsuited for standard photographs. While it's possible to find a way to fix the banding issue, the predominant problem about the image's size never goes away. Old phone models don't support PNGs too.
+        p Benefits of PNG:
+        ul
+          li Features lossless compression so the graphics don't lose quality and detail
+          li Has better features than GIFs
+          li Creates a smaller file size compared to GIF
+          li Supports better transparency
+        p Downsides of PNG:
+        ul
+          li Produces extremely large files that require too much space (sometimes even larger than JPGs)
+          li Unable to support animation
+          li Unsuited for all browsers
+        br
+        h4 TIFF
+        p TIFF stands for Tagged Image File Format. It’s widely used by professionals in the photo industry who prefer to use lossless compression. Ironically, it's the least popular in this category of “heavyweights.” This is perhaps because it's rarely acknowledged as a type of file by websites. Also, there are several types of TIFF files, but not a single reader can scan and read them all. This leads to different format issues down the line. But in terms of printing, TIFF format is regarded as one of the best choices with its organic end result.
+        p TIFF was developed by Aldus for the purpose of desktop publishing. By 2009, its key control has been transferred to the Adobe system. TIFF formats are well-liked by common users, but they truly gained recognition with graphic designers and photo experts involved in any visual niche. Also, studies show that TIFF is a popular format among Apple users.
+        p This particular image format is a breeze to use on programs that handle page layout, page posting and photo manipulation. TIFF is an extremely flexible format for it can be lossy like JPGs or lossless like GIFs and PNGs. It's also a rich image format that is backed up by different imaging software. It's able to record halftone graphic data using various pixel intensities, which makes it perfect for processing, storing, and printing graphics. When it comes to raster image format, TIFF is considered the king.
+        p TIFF is also the most common file format found in photo software like Photoshop, as well as page layout programs like Quark and InDesign.
+        p Benefits of TIFF:
+        ul
+          li Extremely flexible
+          li Supports different compression formats (including zero compression)
+          li Produces high-quality images with all the color and information stored
+          li Saves formats with layers
+        p Downsides of TIFF:
+        ul
+          li Extra-large file sizes
+          li Demands long transfer time
+          li Requires substantial disk space consumption
+        br
+        h4 RAW
+        p RAW image files typically include information straight from a digital camera. The images are called "raw" for the simple reason that they're still untouched. They haven't been processed, so they can't be edited, manipulated or printed yet. There are plenty of these formats. Each camera brand generally features its own proprietary raw format.
+        p Images considered RAW usually have a substantial amount of uncompressed data. For this reason, the file size of a raw image is incredibly large. They are usually converted to TIFF before the editing process begins.
+        br
+        h4 BMP
+        p BMP or Bitmap are Windows image files. At one point, it was one of the very few image formats. BMP files are huge and uncompressed. But, the images are vibrant with colors, high-quality, pretty straightforward and well-suited for all machines and gadgets running a Windows operating system. BMP files are also known as paint images.
+        p Bitmaps are made of millions of dots referred to as pixels with various colors and placements to generate a picture or a pattern. The file can be an 8-bit, a 16-bit or a 24-bit image. So, when you edit a BMP image to make it smaller or larger, you're actually making the individual pixels smaller or larger. This results in shapes that look jagged and sometimes unclear.
+        p BMP files are not that popular since they're not web-friendly and are only limited to Windows programs.
+        br
+        h4 SVG
+        p SVG stands for Scalable Vector Graphics. SVG files are web standards based on XML that identify fixed graphics and animations with two dimensions. The format has been around for over a decade now. But with the current breakthrough of HTML5, it’s finally getting the attention it deserves. For the time being, the SVG format enables users to produce particularly high-quality static and/or animated graphics that don't shed information as their size changes. This means, with SVG, it's possible to create an image that looks equally good on a small phone display and on a 60-inch TV screen.
+        br
+        h4 EPS
+        p In contrast to the prior samples of raster images, the EPS format is under the vector category. Vectors are wonderful since they enable the creator to resize and scale images to whatever size they want without getting pixilated. EPS files can be easily transferred to different programs for photo manipulation. It's also quite popular with photographers and artists who plan to print out their art.
+        br
+        h4 PDF
+        p PDF is the most universal of all file formats. It can be edited, shared, copied, printed and more. It embeds all the data in a file, which may include images, text and layout, no matter what program is used to create said file. It's also one of the easiest formats to use since it's pretty straightforward. More importantly, it's compatible with all operating systems and applications, even those free software available online.
+        br
+        h3 Choosing the Right Image Format Matters
+        p In building a website or a blog, great content can only do so much. In the competitive online world, more often than not, words are not enough. If you really want to take your website to the next level, adding a compelling image tremendously helps. Visuals add a degree of complexity to a post since images bring about different emotions. Graphics also add pops of color to an otherwise bare or plain website.
+        p Using ordinary photos won’t do. Choosing the right image to incorporate to your article takes time. If you have the skills to do your own blog photos, so much the better. Otherwise, you have to use your research skills to find an image online that is the opposite of generic, standard images you see on other sites or blogs.
+        p Choosing the right visuals also mean saving photos in their right format. This is crucial if you want to spruce up the image by changing its color tones or adding text. Even a simple touch-up to an image can distort its quality, especially if you save the edited file using the incorrect format.
+        p It’s also important to note that licensing is a consideration you must look into. Unless you’re posting photos you took yourself, or a drawing/sketch you created, you must check the image’s licensing information. If you use photos from stock photo sites, you may need to pay for them before you can post the images on your own site. If you find a website that offers free stock photos – which are typically free to use – it’s still important to pay attention to the site’s licensing guidelines. When you download and save stock photos, free or otherwise, you also need to choose their format. Depending on how you’d want to use the stock images, your choices may vary.
+        p Hopefully, this quick image format overview helps you demystify the different image formats. This way, on your next post or project, you’ll know the exact format to use in saving your images.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="skeletons.html") Skeletons
+        nav.next-chapter
+          h4 Next chapter
+          a(href="performance-checklist.html") Performance Checklist
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#front-end-file-formats").addClass("mm-selected");

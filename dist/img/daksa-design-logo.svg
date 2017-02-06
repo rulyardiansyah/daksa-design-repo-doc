@@ -1,0 +1,93 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="212" height="280" viewBox="0 0 212 280">
+<defs>
+<linearGradient id="gradient1" gradientUnits="userSpaceOnUse" x1="50.000%" y1="0.000%" x2="50.000%" y2="100.000%" >
+<stop offset="0%" stop-color="#00C2C5" />
+<stop offset="100%" stop-color="#008AE0" />
+</linearGradient>
+<filter id="Ellipse-2-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#008AE0" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+</filter>
+<linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="15.409%" y1="89.286%" x2="84.591%" y2="10.714%" >
+<stop offset="0%" stop-color="#1A96E3" />
+<stop offset="60%" stop-color="#1AC8CB" />
+<stop offset="60%" stop-color="#1AC8CB" />
+</linearGradient>
+<filter id="Ellipse-3-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#00C2C5" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+</filter>
+<linearGradient id="gradient3" gradientUnits="userSpaceOnUse" x1="13.286%" y1="86.071%" x2="79.638%" y2="10.714%" >
+<stop offset="0%" stop-color="#008AE0" />
+<stop offset="100%" stop-color="#00C2C5" />
+</linearGradient>
+<filter id="Polygon-1-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#FFFFFF" flood-opacity="0.280"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+<feFlood flood-color="#91CA77" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="dropShadow" in2="sourceFill" result="gradientFill" />
+<feFlood flood-color="#000000" flood-opacity="0.060"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="-1" dy="-1.73205080756888"/>
+<feGaussianBlur stdDeviation="3.5" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="gradientFill" result="innerShadow"/>
+</filter>
+<linearGradient id="gradient4" gradientUnits="userSpaceOnUse" x1="18.789%" y1="62.857%" x2="64.701%" y2="10.714%" >
+<stop offset="0%" stop-color="#007CC9" />
+<stop offset="100%" stop-color="#00AEB1" />
+</linearGradient>
+<filter id="Polygon-1-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#FFFFFF" flood-opacity="0.200"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+<feFlood flood-color="#91CA77" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="dropShadow" in2="sourceFill" result="gradientFill" />
+<feFlood flood-color="#000000" flood-opacity="0.060"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="-1" dy="-1.73205080756888"/>
+<feGaussianBlur stdDeviation="3.5" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="gradientFill" result="innerShadow"/>
+</filter>
+<linearGradient id="gradient5" gradientUnits="userSpaceOnUse" x1="32.469%" y1="35.000%" x2="53.852%" y2="10.714%" >
+<stop offset="0%" stop-color="#00609C" />
+<stop offset="100%" stop-color="#00878A" />
+</linearGradient>
+<filter id="Polygon-1-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#FFFFFF" flood-opacity="0.200"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+<feFlood flood-color="#00C2C5" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="dropShadow" in2="sourceFill" result="gradientFill" />
+<feFlood flood-color="#000000" flood-opacity="0.080"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="-1" dy="-1.73205080756888"/>
+<feGaussianBlur stdDeviation="3.5" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="gradientFill" result="innerShadow"/>
+</filter>
+</defs>
+<g id="daksa-design-log">
+<path id="Ellipse-2" d="M106.000,280.000 C47.458,280.000 -0.000,232.542 -0.000,174.000 C-0.000,151.945 6.738,131.465 18.265,114.501 C18.265,114.501 72.000,24.000 72.000,24.000 C72.000,24.000 72.057,24.000 72.057,24.000 C77.000,10.019 90.327,0.000 106.000,0.000 C121.673,0.000 135.000,10.019 139.943,24.000 C139.943,24.000 140.000,24.000 140.000,24.000 C140.000,24.000 193.734,114.500 193.734,114.500 C205.261,131.464 212.000,151.944 212.000,174.000 C212.000,232.542 164.542,280.000 106.000,280.000 zM189.000,134.000 C189.000,134.000 187.684,131.686 187.684,131.686 C186.577,129.552 185.395,127.466 184.129,125.434 C184.129,125.434 131.000,32.000 131.000,32.000 C131.000,32.000 130.733,32.000 130.733,32.000 C127.357,21.558 117.566,14.000 106.000,14.000 C94.434,14.000 84.643,21.558 81.267,32.000 C81.267,32.000 81.000,32.000 81.000,32.000 C81.000,32.000 27.869,125.437 27.869,125.437 C26.605,127.466 25.424,129.551 24.318,131.682 C24.318,131.682 23.000,134.000 23.000,134.000 C23.000,134.000 23.131,134.000 23.131,134.000 C17.282,146.095 14.000,159.664 14.000,174.000 C14.000,224.810 55.190,266.000 106.000,266.000 C156.810,266.000 198.000,224.810 198.000,174.000 C198.000,159.664 194.718,146.095 188.869,134.000 C188.869,134.000 189.000,134.000 189.000,134.000 z" fill="url(#gradient1)" filter="url(#Ellipse-2-fx)" />
+<path id="Ellipse-3" d="M182.000,174.000 C182.000,215.974 147.974,250.000 106.000,250.000 C64.026,250.000 30.000,215.974 30.000,174.000 C30.000,158.036 34.932,143.230 43.341,131.000 C43.341,131.000 43.000,131.000 43.000,131.000 L95.000,37.000 C95.000,37.000 95.102,37.000 95.102,37.000 C96.999,32.872 101.159,30.000 106.000,30.000 C110.841,30.000 115.001,32.872 116.898,37.000 C116.898,37.000 117.000,37.000 117.000,37.000 L169.000,131.000 C169.000,131.000 168.659,131.000 168.659,131.000 C177.068,143.230 182.000,158.036 182.000,174.000 z" fill="url(#gradient2)" filter="url(#Ellipse-3-fx)" />
+<path id="Polygon-1" d="M167.000,136.000 C167.000,139.831 166.079,143.439 164.483,146.652 C161.985,153.173 155.505,157.567 139.000,167.000 C116.614,179.794 80.192,197.865 67.000,212.000 C51.465,228.645 72.928,241.000 71.000,241.000 C66.000,241.000 30.000,215.175 30.000,176.000 C30.000,170.000 30.000,155.501 38.000,140.000 C46.000,124.499 94.000,38.000 94.000,38.000 C94.000,38.000 94.007,38.000 94.007,38.000 C95.967,33.304 100.594,30.000 106.000,30.000 C111.406,30.000 116.033,33.304 117.993,38.000 C117.993,38.000 118.000,38.000 118.000,38.000 L121.000,44.000 L131.000,63.000 L142.000,83.000 C142.000,83.000 157.747,107.279 163.729,123.944 C165.796,127.490 167.000,131.600 167.000,136.000 z" fill="url(#gradient3)" filter="url(#Polygon-1-fx)" />
+<path id="Polygon-1" d="M143.000,107.000 C142.138,107.856 141.025,108.744 139.705,109.658 C138.256,110.900 136.612,111.919 134.819,112.654 C112.006,125.357 58.078,142.172 43.000,156.000 C31.915,166.166 30.000,176.000 30.000,176.000 C30.000,176.000 30.000,155.501 38.000,140.000 C46.000,124.499 94.000,38.000 94.000,38.000 C94.000,38.000 94.007,38.000 94.007,38.000 C95.967,33.304 100.594,30.000 106.000,30.000 C111.406,30.000 116.033,33.304 117.993,38.000 C117.993,38.000 118.000,38.000 118.000,38.000 L121.000,44.000 L131.000,63.000 L142.000,83.000 C142.000,83.000 151.566,97.699 143.000,107.000 z" fill="url(#gradient4)" filter="url(#Polygon-1-fx)" />
+<path id="Polygon-1" d="M122.000,50.000 C122.000,56.636 117.960,62.327 112.206,64.751 C101.463,71.487 63.340,95.443 62.000,97.000 C60.471,98.776 94.000,38.000 94.000,38.000 C94.000,38.000 94.007,38.000 94.007,38.000 C95.967,33.304 100.594,30.000 106.000,30.000 C111.406,30.000 116.033,33.304 117.993,38.000 C117.993,38.000 118.000,38.000 118.000,38.000 L121.000,44.000 C121.000,44.000 120.917,44.264 120.917,44.264 C121.607,46.045 122.000,47.974 122.000,50.000 z" fill="url(#gradient5)" filter="url(#Polygon-1-fx)" />
+</g>
+</svg>

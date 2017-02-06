@@ -1,0 +1,635 @@
+<!--Created by rulyardiansyah on 1/17/2017.
+--><!DOCTYPE html><html class="no-js" lang=""><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>DAKSA Design Repository</title><meta name="description" content="Every single things related to DAKSA design should be stored inside this repository"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Ruly Ardiansyah"><meta name="theme-color" content="#262b39"><meta name="apple-mobile-web-app-title" content="DAKSA - IT consultant"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#262b39"><meta name="msapplication-navbutton-color" content="#262b39"><!-- Favicon & Apple Touch Icon--><link rel="apple-touch-icon" href="http://design.daksa.co.id/apple-touch-icon.png"><link rel="shortcut icon" type="image/x-icon" href="http://design.daksa.co.id/favicon.ico"><link rel="stylesheet" href="http://design.daksa.co.id/css/normalize.css"><link rel="stylesheet" href="http://design.daksa.co.id/css/main.css"><link rel="stylesheet" href="http://design.daksa.co.id/js/vendor/jQuery.mmenu-master/dist/css/jquery.mmenu.all.css"><link rel="stylesheet" href="http://design.daksa.co.id/js/vendor/jQuery.mmenu-master/dist/extensions/widescreen/jquery.mmenu.widescreen.css" media="all and (min-width: 768px)"><link rel="stylesheet" href="http://design.daksa.co.id/js/vendor/footable-standalone.latest/css/footable.standalone.min.css"><link rel="stylesheet" href="http://design.daksa.co.id/css/sections.css"><script src="http://design.daksa.co.id/js/vendor/modernizr-2.8.3.min.js"></script></head><body onload="prettyPrint()"><!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><link rel="stylesheet" href="../../../js/vendor/code-prettify-master/src/prettify.css"><style>.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+</style><!-- CONTENTS SHOULD BEGINS HERE--><div class="container"><header class="header fixed"><a href="#menu"><span></span></a></header><section class="content" id="content"><article><h1>Inputs</h1><p>These are <strike>the almost complete</strike> CSS &amp; Sass selector for Primefaces input components.</p></article><hr class="article-separator"><article><h4>AutoComplete</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/autoComplete.xhtml" target="_blank">AutoComplete</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-auto-complete-css">CSS</a></li><li><a href="#inputs-auto-complete-sass">Sass</a></li></ul><article><div id="inputs-auto-complete-css"><pre class="prettyprint lang-css linenums" id="inputs-auto-complete-css-selector">/* INPUT - AUTOCOMPLETE */
+.ui-autocomplete {
+}
+.ui-autocomplete .ui-autocomplete-input {
+}
+.ui-autocomplete .ui-autocomplete-input.ui-state-hover, .ui-autocomplete .ui-autocomplete-input.ui-state-focus {
+}
+.ui-autocomplete .ui-autocomplete-input.ui-state-disabled {
+}
+.ui-autocomplete .ui-autocomplete-input.ui-state-disabled:hover {
+}
+.ui-autocomplete .ui-autocomplete-dropdown, .ui-autocomplete .ui-autocomplete-dropdown.ui-state-hover,
+.ui-autocomplete .ui-autocomplete-dropdown.ui-state-focus {
+}
+.ui-autocomplete .ui-autocomplete-dropdown .ui-icon, .ui-autocomplete .ui-autocomplete-dropdown.ui-state-hover .ui-icon,
+.ui-autocomplete .ui-autocomplete-dropdown.ui-state-focus .ui-icon {
+}
+.ui-autocomplete-panel {
+}
+.ui-autocomplete-panel .ui-autocomplete-table {
+}
+.ui-autocomplete-panel .ui-autocomplete-list {
+}
+.ui-autocomplete-panel .ui-autocomplete-list-item {
+}
+.ui-autocomplete-panel .ui-autocomplete-list-item.ui-state-highlight {
+}
+.ui-autocomplete-panel .ui-autocomplete-query {
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-auto-complete-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-auto-complete-sass"><pre class="prettyprint lang-css linenums" id="inputs-auto-complete-sass-selector">/* Sass INPUT - AUTOCOMPLETE */
+
+.ui-autocomplete {
+  // CSS properties for this particular class preferably inherited from .ui-inputfield (Input - InputText)
+  .ui-autocomplete-input {
+    &.ui-state-hover, &.ui-state-focus {
+    }
+    &.ui-state-disabled {
+      &:hover {
+      }
+    }
+  }
+  .ui-autocomplete-dropdown, .ui-autocomplete-dropdown.ui-state-hover,
+  .ui-autocomplete-dropdown.ui-state-focus {
+    .ui-icon {
+    }
+  }
+}
+.ui-autocomplete-panel {
+  .ui-autocomplete-table {
+  }
+  .ui-autocomplete-list {
+  }
+  .ui-autocomplete-list-item {
+    &.ui-state-highlight {
+    }
+  }
+  .ui-autocomplete-query {
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-auto-complete-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>BooleanButton</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/booleanButton.xhtml" target="_blank">BooleanButton</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-boolean-button-css">CSS</a></li><li><a href="#inputs-boolean-button-sass">Sass</a></li></ul><article><div id="inputs-boolean-button-css"><pre class="prettyprint lang-css linenums" id="inputs-boolean-button-css-selector">/* CSS INPUT - BOOLEANBUTTON */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-boolean-button-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-boolean-button-sass"><pre class="prettyprint lang-css linenums" id="inputs-boolean-button-sass-selector">/* Sass INPUT - BOOLEANBUTTON */
+
+.ui-selectbooleanbutton {
+  &.ui-state-hover, &.ui-state-focus {
+  }
+  // CSS properties for this particular class preferably inherited from .ui-button (Button - Button)
+  &.ui-button {
+    &.ui-state-default {
+    }
+    &.ui-state-hover, &.ui-state-focus {
+    }
+    &.ui-state-active {
+    }
+    .ui-icon {
+    }
+    .ui-button-text {
+    }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-boolean-button-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>Calendar</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/calendar.xhtml" target="_blank">Calendar</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-calendar-css">CSS</a></li><li><a href="#inputs-calendar-sass">Sass</a></li></ul><article><div id="inputs-calendar-css"><pre class="prettyprint lang-css linenums" id="inputs-calendar-css-selector">/* CSS INPUT - CALENDAR */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-calendar-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-calendar-sass"><pre class="prettyprint lang-css linenums" id="inputs-calendar-sass-selector">/* Sass INPUT - CALENDAR */
+
+.ui-calendar {
+  // CSS properties for this particular class preferably as a copy of .ui-inputfield (Input - InputText)
+  .ui-inputfield {
+    &.ui-state-hover, &.ui-state-focus {
+    }
+    &.ui-state-disabled {
+      &:hover {
+      }
+    }
+  }
+}
+
+.ui-datepicker {
+  .ui-datepicker-header {
+  }
+  .ui-datepicker-prev {
+    .ui-icon { }
+  }
+  .ui-datepicker-next {
+    .ui-icon { }
+  }
+  .ui-datepicker-title {
+    .ui-datepicker-month { }
+    .ui-datepicker-year { }
+  }
+  .ui-datepicker-calendar {
+    thead {
+      tr {
+      }
+    }
+    th {
+      &.ui-datepicker-week-end { }
+    }
+    td {
+      &.ui-datepicker-week-end {
+        &:first-child {
+          a {
+          }
+        }
+      }
+      &.ui-datepicker-other-month { }
+      a {
+        &.ui-state-hover { }
+        &.ui-state-active {
+        }
+        &.ui-state-disabled { }
+      }
+    }
+  }
+}
+
+.ui-datepicker-trigger {
+  &.ui-state-hover, &.ui-state-focus { }
+  &.ui-state-active { }
+  .ui-icon { }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-calendar-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectOneMenu</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/oneMenu.xhtml" target="_blank">SelectOneMenu</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-one-menu-css">CSS</a></li><li><a href="#inputs-select-one-menu-sass">Sass</a></li></ul><article><div id="inputs-select-one-menu-css"><pre class="prettyprint lang-css linenums" id="inputs-select-one-menu-css-selector">/* CSS INPUT - SELECTONEMENU */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-menu-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-one-menu-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-one-menu-sass-selector">/* Sass INPUT - SELECTONEMENU */
+
+.ui-selectonemenu {
+  .ui-selectonemenu-label { }
+  .ui-selectonemenu-trigger {
+    &.ui-state-hover, &.ui-state-focus { }
+    &.ui-state-active { }
+    &.ui-state-disabled { }
+    .ui-icon { }
+  }
+}
+
+.ui-selectonemenu-panel {
+  .ui-selectonemenu-items-wrapper {
+  }
+  .ui-selectonemenu-filter-container {
+    .ui-icon { }
+  }
+  .ui-selectonemenu-filter {
+  }
+  .ui-selectonemenu-items {
+  }
+  .ui-selectonemenu-table {
+    td { }
+  }
+  .ui-selectonemenu-item-group {
+  }
+  .ui-selectonemenu-item {
+    &.ui-state-hover, &.ui-state-focus { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-menu-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>InputText</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inputText.xhtml" target="_blank">InputText</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-input-text-css">CSS</a></li><li><a href="#inputs-input-text-sass">Sass</a></li></ul><article><div id="inputs-input-text-css"><pre class="prettyprint lang-css linenums" id="inputs-input-text-css-selector">/* CSS INPUT - INPUTTEXT */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-input-text-sass"><pre class="prettyprint lang-css linenums" id="inputs-input-text-sass-selector">/* Sass INPUT - INPUTTEXT */
+
+.ui-inputfield {
+  &.ui-state-hover, &.ui-state-focus {
+  }
+  &.ui-state-disabled {
+    &:hover {
+    }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectManyButton</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/manyButton.xhtml" target="_blank">SelectManyButton</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-many-button-css">CSS</a></li><li><a href="#inputs-select-many-button-sass">Sass</a></li></ul><article><div id="inputs-select-many-button-css"><pre class="prettyprint lang-css linenums" id="inputs-select-many-button-css-selector">/* CSS INPUT - SELECTMANYBUTTON */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-button-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-many-button-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-many-button-sass-selector">/* Sass INPUT - SELECTMANYBUTTON */
+
+.ui-selectmanybutton {
+  // CSS properties for this particular component should refer to .ui-button (Button - Button)
+  .ui-button {
+    &.ui-state-hover, &.ui-state-focus { }
+    &.ui-state-active { }
+    &.ui-state-disabled { }
+    .ui-button-text { }
+    .ui-icon { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-button-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectManyCheckbox</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/manyCheckbox.xhtml" target="_blank">SelectManyCheckbox</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-many-checkbox-css">CSS</a></li><li><a href="#inputs-select-many-checkbox-sass">Sass</a></li></ul><article><div id="inputs-select-many-checkbox-css"><pre class="prettyprint lang-css linenums" id="inputs-select-many-checkbox-css-selector">/* CSS INPUT - SELECTMANYCHECKBOX */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-checkbox-css-selector">Sass Copy CSS Selector</button></div><div class="hide" id="inputs-select-many-checkbox-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-many-checkbox-sass-selector">/* INPUT - SELECTMANYCHECKBOX */
+
+.ui-selectmanycheckbox {
+  .ui-chkbox {
+    // CSS properties for this particular component should refer to .ui-chkbox (Input - SelectBooleanCheckbox)
+    &.ui-state-hover, &.ui-state-focus { }
+    &.ui-state-active { }
+    &.ui-state-disabled { }
+    .ui-chkbox-icon { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-checkbox-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectOneButton</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/oneButton.xhtml" target="_blank">SelectOneButton</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-one-button-css">CSS</a></li><li><a href="#inputs-select-one-button-sass">Sass</a></li></ul><article><div id="inputs-select-one-button-css"><pre class="prettyprint lang-css linenums" id="inputs-select-one-button-css-selector">/* CSS INPUT - SELECTONEBUTTON */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-button-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-one-button-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-one-button-sass-selector">/* Sass INPUT - SELECTONEBUTTON */
+
+.ui-selectonebutton {
+  .ui-button {
+    // CSS properties for this particular component should refer to .ui-button (Button - Button)
+    &.ui-state-hover, &.ui-state-focus { }
+    &.ui-state-active { }
+    &.ui-state-disabled { }
+    .ui-button-text { }
+    .ui-icon { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-button-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>Slider</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/slider.xhtml">Slider</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-slider-css">CSS</a></li><li><a href="#inputs-slider-sass">Sass</a></li></ul><article><div id="inputs-slider-css"><pre class="prettyprint lang-css linenums" id="inputs-slider-css-selector">/* CSS INPUT - SLIDER */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-slider-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-slider-sass"><pre class="prettyprint lang-css linenums" id="inputs-slider-sass-selector">/* Sass INPUT - SLIDER */
+
+.ui-slider {
+  &.ui-slider-horizontal { }
+  &.ui-slider-vertical { }
+  .ui-slider-range { }
+  .ui-slider-handle {
+    &.ui-state-hover, &.ui-state-focus { }
+    &.ui-state-active { }
+    &.ui-state-disabled { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-slider-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>Password</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/password.xhtml">Password</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-password-css">CSS</a></li><li><a href="#inputs-password-sass">Sass</a></li></ul><article><div id="inputs-password-css"><pre class="prettyprint lang-css linenums" id="inputs-password-css-selector">/* CSS INPUT - PASSWORD */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-password-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-password-sass"><pre class="prettyprint lang-css linenums" id="inputs-password-sass-selector">/* Sass INPUT - PASSWORD */
+
+// CSS properties for this particular component should refer to .ui-inputfield (Input - InputText)
+.ui-password {
+  &.ui-state-hover, &.ui-state-focus { }
+  &.ui-state-disabled { }
+  &.ui-state-error { }
+}
+.ui-password-panel {
+  .ui-password-meter { }
+  .ui-password-info { }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-password-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>Inplace</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inplace.xhtml">Inplace</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-inplace-css">CSS</a></li><li><a href="#inputs-inplace-sass">Sass</a></li></ul><article><div id="inputs-inplace-css"><pre class="prettyprint lang-css linenums" id="inputs-inplace-css-selector">/* CSS INPUT - INPLACE */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-inplace-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-inplace-sass"><pre class="prettyprint lang-css linenums" id="inputs-inplace-sass-selector">/* Sass INPUT - INPLACE */
+
+.ui-inplace {
+  .ui-inplace-display {
+    &.ui-state-hover, &.ui-state-focus {
+    }
+  }
+  .ui-inplace-content {
+    .ui-inputfield {
+      // CSS properties for this particular component should refer to .ui-inputfield (Input - InputText)
+    }
+  }
+  .ui-inplace-editor {
+    .ui-inplace-save {
+      .ui-icon { }
+    }
+    .ui-inplace-cancel {
+      .ui-icon { }
+    }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-inplace-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>InputTextArea</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inputTextarea.xhtml">InputTextArea</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-input-text-area-css">CSS</a></li><li><a href="#inputs-input-text-area-sass">Sass</a></li></ul><article><div id="inputs-input-text-area-css"><pre class="prettyprint lang-css linenums" id="inputs-input-text-area-css-selector">/* CSS INPUT - INPUTTEXTAREA */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-area-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-input-text-area-sass"><pre class="prettyprint lang-css linenums" id="inputs-input-text-area-sass-selector">/* Sass INPUT - INPUTTEXTAREA */
+
+.ui-inputtextarea {
+  &.ui-state-hover, &.ui-state-focus { }
+  &.ui-state-disabled { }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-area-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectBooleanCheckbox</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/booleanCheckbox.xhtml">SelectBooleanCheckbox</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-boolean-checkbox-css">CSS</a></li><li><a href="#inputs-select-boolean-checkbox-sass">Sass</a></li></ul><article><div id="inputs-select-boolean-checkbox-css"><pre class="prettyprint lang-css linenums" id="inputs-select-boolean-checkbox-css-selector">/* CSS INPUT - SELECTBOOLEANCHECKBOX */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-boolean-checkbox-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-boolean-checkbox-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-boolean-checkbox-sass-selector">/* Sass INPUT - SELECTBOOLEANCHECKBOX */
+
+.ui-chkbox {
+  &.ui-state-hover, &.ui-state-focus { }
+  &.ui-state-active { }
+  &.ui-state-disabled { }
+  .ui-chkbox-icon { }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-boolean-checkbox-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>Editor <span class="label warning">Deprecated</span></h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/editor.xhtml">Editor</a> component. As you can check on the link, this component is deprecated, use <a href="http://www.primefaces.org/showcase/ui/input/textEditor.xhtml">TextEditor</a> instead.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-editor-css">CSS</a></li><li><a href="#inputs-editor-sass">Sass</a></li></ul><article><div id="inputs-editor-css"><pre class="prettyprint lang-css linenums" id="inputs-editor-css-selector">/* CSS INPUT - EDITOR */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-editor-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-editor-sass"><pre class="prettyprint lang-css linenums" id="inputs-editor-sass-selector">/* Sass INPUT - EDITOR */
+
+.ui-editor {
+  iframe { }
+}
+.ui-editor-toolbar {
+}
+.ui-editor-group {
+}
+.ui-editor-button {
+  &.ui-state-hover, &.ui-state-focus { }
+  &.ui-state-disabled { }
+  &[title="Bold"] { }
+  &[title="Italic"] { }
+  &[title="Underline"] { }
+  &[title="Strikethrough"] { }
+  &[title="Subscript"] { }
+  &[title="Superscript"] { }
+  &[title="Font"] { }
+  &[title="Font Size"] { }
+  &[title="Style"] { }
+  &[title="Font Color"] { }
+  &[title="Text Highlight Color"] { }
+  &[title="Remove Formatting"] { }
+  &[title="Bullets"] { }
+  &[title="Numbering"] { }
+  &[title="Outdent"] { }
+  &[title="Indent"] { }
+  &[title="Align Text Left"] { }
+  &[title="Center"] { }
+  &[title="Align Text Right"] { }
+  &[title="Justify"] { }
+  &[title="Undo"] { }
+  &[title="Redo"] { }
+  &[title="Insert Horizontal Rule"] { }
+  &[title="Insert Image"] { }
+  &[title="Insert Hyperlink"] { }
+  &[title="Remove Hyperlink"] { }
+  &[title="Cut"] { }
+  &[title="Copy"] { }
+  &[title="Paste"] { }
+  &[title="Paste as Text"] { }
+  &[title="Print"] { }
+  &[title="Show Source"] { }
+}
+.ui-editor-divider {
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-editor-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>TextEditor</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/textEditor.xhtml">TextEditor</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-text-editor-css">CSS</a></li><li><a href="#inputs-text-editor-sass">Sass</a></li></ul><article><div id="inputs-text-editor-css"><pre class="prettyprint lang-css linenums" id="inputs-text-editor-css-selector">/* CSS INPUT - TEXTEDITOR */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-text-editor-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-text-editor-sass"><pre class="prettyprint lang-css linenums" id="inputs-text-editor-sass-selector">/* Sass INPUT - TEXTEDITOR */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-text-editor-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectOneListBox</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/listbox.xhtml">SelectOneListBox</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-one-list-box-css">CSS</a></li><li><a href="#inputs-select-one-list-box-sass">Sass</a></li></ul><article><div id="inputs-select-one-list-box-css"><pre class="prettyprint lang-css linenums" id="inputs-select-one-list-box-css-selector">/* CSS INPUT - SELECTONELISTBOX */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-list-box-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-one-list-box-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-one-list-box-sass-selector">/* Sass INPUT - SELECTONELISTBOX */
+
+.ui-selectonelistbox {
+  .ui-selectlistbox-listcontainer {
+  }
+  .ui-selectlistbox-list {
+  }
+  .ui-selectlistbox-item {
+    &.ui-state-hover { }
+    &.ui-state-highlight { }
+  }
+}
+.ui-selectlistbox-filter-container {
+  .ui-selectlistbox-filter {
+    &.ui-state-hover, &.ui-state-focus { }
+  }
+  .ui-icon { }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-list-box-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectManyMenu</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/manyMenu.xhtml">SelectManyMenu</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-many-menu-css">CSS</a></li><li><a href="#inputs-select-many-menu-sass">Sass</a></li></ul><article><div id="inputs-select-many-menu-css"><pre class="prettyprint lang-css linenums" id="inputs-select-many-menu-css-selector">/* CSS INPUT - SELECTMANYMENU */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-menu-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-many-menu-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-many-menu-sass-selector">/* INPUT - SELECTMANYMENU */
+
+.ui-selectmanymenu {
+  .ui-selectlistbox-listcontainer {
+  }
+  .ui-selectlistbox-list {
+  }
+  .ui-selectlistbox-item {
+    &.ui-state-hover { }
+    &.ui-state-highlight { }
+  }
+}
+.ui-selectlistbox-filter-container {
+  .ui-selectlistbox-filter {
+    &.ui-state-hover, &.ui-state-focus { }
+  }
+  .ui-icon { }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-menu-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>SelectOneRadio</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/oneRadio.xhtml">SelectOneRadio</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-select-one-radio-css">CSS</a></li><li><a href="#inputs-select-one-radio-sass">Sass</a></li></ul><article><div id="inputs-select-one-radio-css"><pre class="prettyprint lang-css linenums" id="inputs-select-one-radio-css-selector">/* CSS INPUT - SELECTONERADIO */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-radio-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-select-one-radio-sass"><pre class="prettyprint lang-css linenums" id="inputs-select-one-radio-sass-selector">/* INPUT - SELECTONERADIO */
+
+.ui-selectoneradio {
+}
+.ui-radiobutton {
+  .ui-radiobutton-box {
+    &.ui-state-hover, &.ui-state-focus { }
+    &.ui-state-active { }
+  }
+  .ui-radiobutton-icon {
+    &.ui-icon-bullet { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-radio-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>Spinner</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/spinner.xhtml">Spinner</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-spinner-css">CSS</a></li><li><a href="#inputs-spinner-sass">Sass</a></li></ul><article><div id="inputs-spinner-css"><pre class="prettyprint lang-css linenums" id="inputs-spinner-css-selector">/* CSS INPUT - SPINNER */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-spinner-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-spinner-sass"><pre class="prettyprint lang-css linenums" id="inputs-spinner-sass-selector">/* INPUT - SPINNER */
+
+.ui-spinner {
+  .ui-spinner-button {
+    &.ui-spinner-up { }
+    &.ui-spinner-down { }
+    .ui-icon { }
+  }
+}
+.ui-spinner-input {
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-spinner-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>InputSwitch</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inputSwitch.xhtml">InputSwitch</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-input-switch-css">CSS</a></li><li><a href="#inputs-input-switch-sass">Sass</a></li></ul><article><div id="inputs-input-switch-css"><pre class="prettyprint lang-css linenums" id="inputs-input-switch-css-selector">/* CSS INPUT - INPUTSWITCH */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-input-switch-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-input-switch-sass"><pre class="prettyprint lang-css linenums" id="inputs-input-switch-sass-selector">/* INPUT - INPUTSWITCH */
+
+.ui-inputswitch {
+  .ui-inputswitch-off {
+    span { }
+  }
+  .ui-inputswitch-on {
+    span { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-input-switch-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"><article><h4>FileUpload</h4><p>This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/file/upload/basic.xhtml">FileUpload</a> component.</p><div class="primefaces-overrides-source-code"><ul class="nav"><li><a class="current" href="#inputs-file-upload-css">CSS</a></li><li><a href="#inputs-file-upload-sass">Sass</a></li></ul><article><div id="inputs-file-upload-css"><pre class="prettyprint lang-css linenums" id="inputs-file-upload-css-selector">/* CSS INPUT - FILEUPLOAD */</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-file-upload-css-selector">Copy CSS Selector</button></div><div class="hide" id="inputs-file-upload-sass"><pre class="prettyprint lang-css linenums" id="inputs-file-upload-sass-selector">/* INPUT - INPUTSWITCH */
+
+.ui-inputswitch {
+  .ui-inputswitch-off {
+    span { }
+  }
+  .ui-inputswitch-on {
+    span { }
+  }
+}</pre><button class="button-clipboard" data-clipboard-action="copy" data-clipboard-target="#inputs-file-upload-sass-selector">Copy Sass Selector</button></div></article></div></article><hr class="article-separator"></section><footer class="section-nav-chapter"><nav class="prev-chapter"><h4>Prev chapter</h4><a href="prelude.html">Prelude</a></nav><nav class="next-chapter"><h4>Next chapter</h4><a href="buttons.html">Buttons</a></nav></footer></div><!-- NAVIGATION begins here--><!-- ========================================================================= //--><!-- ================================= LOCAL ================================= //--><!-- ========================================================================= //--><!-- nav#menuul
+  // ==================================================
+    CORPORATE SECTION LINKS
+    ==================================================
+  li
+    span <img src="http://192.168.1.28/pratpretprot/img/menu-ic-corporate.svg" alt="DAKSA Corporate Design" /> Corporate Design
+    ul
+      li#corporate-prelude
+        a(href="http://192.168.1.28/pratpretprot/sections/corporate/prelude.html") Prelude
+      li#logo
+        a(href="http://192.168.1.28/pratpretprot/sections/corporate/logo.html") Logo
+      li
+        span Visual Identity
+        ul
+          li#visual-identity-colors-palette
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/visual-identity/colors-palette.html") Colors Palette
+          li#visual-identity-typography
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/visual-identity/typography.html") Typography
+          li#visual-identity-imagery
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/visual-identity/imagery.html") Imagery &amp; Illustration
+          li#visual-identity-usage-implementation
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/visual-identity/usage-implementation.html") Usage &amp; Implementation
+      li
+        span Products
+        ul
+          li#products-eva
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/products/eva.html") EVA
+          li#products-sandra
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/products/sandra.html") SANDRA
+          li#products-marisa
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/products/marisa.html") MARISA
+          li#products-crisa
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/products/crisa.html") CRISA
+          li#products-trojan
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/products/trojan.html") TROJAN
+      li
+        span Corporate Templates
+        ul
+          li#corporate-templates-document-templates
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/templates/document.html") Document Templates
+          li#corporate-templates-presentation-templates
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/templates/presentation.html") Presentation Templates
+          li#corporate-templates-stationery
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/templates/stationery.html") Stationery
+          li#corporate-templates-email-signature
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/templates/email-signature.html") Email Signature
+          li#corporate-templates-company-profile
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/templates/company-profile.html") Company Profile
+          li#corporate-templates-miscellaneous
+            a(href="http://192.168.1.28/pratpretprot/sections/corporate/templates/miscellaneous.html") Miscellaneous
+
+  // ==================================================
+    WEB SECTION LINKS
+    ==================================================
+  li
+    span <img src="http://192.168.1.28/pratpretprot/img/menu-ic-web.svg" alt="DAKSA Web Design" /> Web Design
+    ul
+      li
+        span Grid System
+        ul
+          li#grid-system-prelude
+            a(href="http://192.168.1.28/pratpretprot/sections/web/grid-system/prelude.html") Prelude
+          li#grid-system-installation-usage
+            a(href="http://192.168.1.28/pratpretprot/sections/web/grid-system/installation-usage.html") Installation &amp; Usage
+          li#grid-system-options
+            a(href="http://192.168.1.28/pratpretprot/sections/web/grid-system/options.html") Options
+      li
+        span Front-End
+        ul
+          li#front-end-skeletons
+            a(href="http://192.168.1.28/pratpretprot/sections/web/front-end/skeletons.html") Skeletons
+          li#front-end-file-formats
+            a(href="http://192.168.1.28/pratpretprot/sections/web/front-end/file-formats.html") File Formats
+          li#front-end-performance-checklist
+            a(href="http://192.168.1.28/pratpretprot/sections/web/front-end/performance-checklist.html") Performance Checklist
+          li#front-end-tools-closure-compiler
+            a(href="http://192.168.1.28/pratpretprot/sections/web/front-end/tools-closure-compiler.html") Tools: Closure Compiler
+          li#front-end-tools-pagespeed
+            a(href="http://192.168.1.28/pratpretprot/sections/web/front-end/tools-pagespeed.html") Tools: PageSpeed
+      li
+        span Primefaces Overrides
+        ul
+          li#primefaces-overrides-prelude
+            a(href="http://192.168.1.28/pratpretprot/sections/web/primefaces-overrides/prelude.html") Prelude
+          li#primefaces-overrides-inputs
+            a(href="http://192.168.1.28/pratpretprot/sections/web/primefaces-overrides/inputs.html") Inputs
+          li#primefaces-overrides-buttons
+            a(href="http://192.168.1.28/pratpretprot/sections/web/primefaces-overrides/buttons.html") Buttons
+          li#primefaces-overrides-datas
+            a(href="http://192.168.1.28/pratpretprot/sections/web/primefaces-overrides/datas.html") Datas
+          li#primefaces-overrides-panels
+            a(href="http://192.168.1.28/pratpretprot/sections/web/primefaces-overrides/panels.html") Panels
+          li#primefaces-overrides-overlays-messages
+            a(href="http://192.168.1.28/pratpretprot/sections/web/primefaces-overrides/overlays-messages.html") Overlays &amp; Messages
+
+    // ==================================================
+      MOBILE SECTION LINKS
+      ==================================================
+    li
+      span <img src="http://192.168.1.28/pratpretprot/img/menu-ic-mobile.svg" alt="DAKSA Mobile Design" /> Mobile Design
+      ul
+        li
+          span Android Design
+          ul
+            li#android-design-prelude
+              a.disabled(href="http://192.168.1.28/pratpretprot/sections/mobile/android-design/prelude.html") Prelude
+            li#android-design-components
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/android-design/components.html") Components
+            li#android-design-patterns
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/android-design/patterns.html") Patterns
+            li#android-design-usability
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/android-design/usability.html") Usability
+            li#android-design-iconography
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/android-design/iconography.html") Iconography
+            li#android-design-resources
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/android-design/resources.html") Resources
+        li
+          span iOS Design
+          ul
+            li#ios-design-prelude
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/ios-design/prelude.html") Prelude
+            li#ios-design-resolutions-displays
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/ios-design/resolutions-displays.html") Resolutions &amp; Displays
+            li#ios-design-iconography
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/ios-design/iconography.html") Iconography
+            li#ios-design-typography
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/ios-design/typography.html") Typography
+            li#ios-design-components
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/ios-design/components.html") Components
+            li#ios-design-resources
+              a(href="http://192.168.1.28/pratpretprot/sections/mobile/ios-design/resources.html") Resources
+
+    // ==================================================
+      MOBILE SECTION LINKS
+      ==================================================
+    li
+      span <img src="http://192.168.1.28/pratpretprot/img/menu-ic-project.svg" alt="DAKSA Project Directories" /> Project Directories
+      ul
+        li
+          a(href="#") Project A
+        li
+          a(href="#") Project B
+        li
+          a(href="#") Project C
+        li
+          a(href="#") Project D
+
+
+
+--><!-- ========================================================================= //--><!-- ================================= PUBLIC ================================ //--><!-- ========================================================================= //--><nav id="menu"><ul><!-- ==================================================CORPORATE SECTION LINKS
+==================================================--><li><span><img src="http://design.daksa.co.id/img/menu-ic-corporate.svg" alt="DAKSA Corporate Design" /> Corporate Design</span><ul><li id="corporate-prelude"><a href="http://design.daksa.co.id/sections/corporate/prelude.html">Prelude</a></li><li id="logo"><a href="http://design.daksa.co.id/sections/corporate/logo.html">Logo</a></li><li><span>Visual Identity</span><ul><li id="visual-identity-colors-palette"><a href="http://design.daksa.co.id/sections/corporate/visual-identity/colors-palette.html">Colors Palette</a></li><li id="visual-identity-typography"><a href="http://design.daksa.co.id/sections/corporate/visual-identity/typography.html">Typography</a></li><li id="visual-identity-imagery"><a href="http://design.daksa.co.id/sections/corporate/visual-identity/imagery.html">Imagery &amp; Illustration</a></li><li id="visual-identity-usage-implementation"><a href="http://design.daksa.co.id/sections/corporate/visual-identity/usage-implementation.html">Usage &amp; Implementation</a></li></ul></li><li><span>Products</span><ul><li id="products-eva"><a href="http://design.daksa.co.id/sections/corporate/products/eva.html">EVA</a></li><li id="products-sandra"><a href="http://design.daksa.co.id/sections/corporate/products/sandra.html">SANDRA</a></li><li id="products-marisa"><a href="http://design.daksa.co.id/sections/corporate/products/marisa.html">MARISA</a></li><li id="products-crisa"><a href="http://design.daksa.co.id/sections/corporate/products/crisa.html">CRISA</a></li><li id="products-trojan"><a href="http://design.daksa.co.id/sections/corporate/products/trojan.html">TROJAN</a></li></ul></li><li><span>Corporate Templates</span><ul><li id="corporate-templates-document-templates"><a href="http://design.daksa.co.id/sections/corporate/templates/document.html">Document Templates</a></li><li id="corporate-templates-presentation-templates"><a href="http://design.daksa.co.id/sections/corporate/templates/presentation.html">Presentation Templates</a></li><li id="corporate-templates-stationery"><a href="http://design.daksa.co.id/sections/corporate/templates/stationery.html">Stationery</a></li><li id="corporate-templates-email-signature"><a href="http://design.daksa.co.id/sections/corporate/templates/email-signature.html">Email Signature</a></li><li id="corporate-templates-company-profile"><a href="http://design.daksa.co.id/sections/corporate/templates/company-profile.html">Company Profile</a></li><li id="corporate-templates-miscellaneous"><a href="http://design.daksa.co.id/sections/corporate/templates/miscellaneous.html">Miscellaneous</a></li></ul></li></ul></li><!-- ==================================================WEB SECTION LINKS
+==================================================--><li><span><img src="http://design.daksa.co.id/img/menu-ic-web.svg" alt="DAKSA Web Design" /> Web Design</span><ul><li><span>Grid System</span><ul><li id="grid-system-prelude"><a href="http://design.daksa.co.id/sections/web/grid-system/prelude.html">Prelude</a></li><li id="grid-system-installation-usage"><a href="http://design.daksa.co.id/sections/web/grid-system/installation-usage.html">Installation &amp; Usage</a></li><li id="grid-system-options"><a href="http://design.daksa.co.id/sections/web/grid-system/options.html">Options</a></li></ul></li><li><span>Front-End</span><ul><li id="front-end-skeletons"><a href="http://design.daksa.co.id/sections/web/front-end/skeletons.html">Skeletons</a></li><li id="front-end-file-formats"><a href="http://design.daksa.co.id/sections/web/front-end/file-formats.html">File Formats</a></li><li id="front-end-performance-checklist"><a href="http://design.daksa.co.id/sections/web/front-end/performance-checklist.html">Performance Checklist</a></li><li id="front-end-tools-closure-compiler"><a href="http://design.daksa.co.id/sections/web/front-end/tools-closure-compiler.html">Tools: Closure Compiler</a></li><li id="front-end-tools-pagespeed"><a href="http://design.daksa.co.id/sections/web/front-end/tools-pagespeed.html">Tools: PageSpeed</a></li></ul></li><li><span>Primefaces Overrides</span><ul><li id="primefaces-overrides-prelude"><a href="http://design.daksa.co.id/sections/web/primefaces-overrides/prelude.html">Prelude</a></li><li id="primefaces-overrides-inputs"><a href="http://design.daksa.co.id/sections/web/primefaces-overrides/inputs.html">Inputs</a></li><li id="primefaces-overrides-buttons"><a href="http://design.daksa.co.id/sections/web/primefaces-overrides/buttons.html">Buttons</a></li><li id="primefaces-overrides-datas"><a href="http://design.daksa.co.id/sections/web/primefaces-overrides/datas.html">Datas</a></li><li id="primefaces-overrides-panels"><a href="http://design.daksa.co.id/sections/web/primefaces-overrides/panels.html">Panels</a></li><li id="primefaces-overrides-overlays-messages"><a href="http://design.daksa.co.id/sections/web/primefaces-overrides/overlays-messages.html">Overlays &amp; Messages</a></li></ul></li></ul><!-- ==================================================MOBILE SECTION LINKS
+==================================================--><li><span><img src="http://design.daksa.co.id/img/menu-ic-mobile.svg" alt="DAKSA Mobile Design" /> Mobile Design</span><ul><li><span>Android Design</span><ul><li id="android-design-prelude"><a href="http://design.daksa.co.id/sections/mobile/android-design/prelude.html">Prelude</a></li><li id="android-design-components"><a href="http://design.daksa.co.id/sections/mobile/android-design/components.html">Components</a></li><li id="android-design-patterns"><a href="http://design.daksa.co.id/sections/mobile/android-design/patterns.html">Patterns</a></li><li id="android-design-usability"><a href="http://design.daksa.co.id/sections/mobile/android-design/usability.html">Usability</a></li><li id="android-design-iconography"><a href="http://design.daksa.co.id/sections/mobile/android-design/iconography.html">Iconography</a></li><li id="android-design-resources"><a href="http://design.daksa.co.id/sections/mobile/android-design/resources.html">Resources</a></li></ul></li><li><span>iOS Design</span><ul><li id="ios-design-prelude"><a href="http://design.daksa.co.id/sections/mobile/ios-design/prelude.html">Prelude</a></li><li id="ios-design-resolutions-displays"><a href="http://design.daksa.co.id/sections/mobile/ios-design/resolutions-displays.html">Resolutions &amp; Displays</a></li><li id="ios-design-iconography"><a href="http://design.daksa.co.id/sections/mobile/ios-design/iconography.html">Iconography</a></li><li id="ios-design-typography"><a href="http://design.daksa.co.id/sections/mobile/ios-design/typography.html">Typography</a></li><li id="ios-design-components"><a href="http://design.daksa.co.id/sections/mobile/ios-design/components.html">Components</a></li><li id="ios-design-resources"><a href="http://design.daksa.co.id/sections/mobile/ios-design/resources.html">Resources</a></li></ul></li></ul></li><!-- ==================================================MOBILE SECTION LINKS
+==================================================--><li><span><img src="http://design.daksa.co.id/img/menu-ic-project.svg" alt="DAKSA Project Directories" /> Project Directories</span><ul><li><a href="#">Project A</a></li><li><a href="#">Project B</a></li><li><a href="#">Project C</a></li><li><a href="#">Project D</a></li></ul></li></li></ul></nav><!-- NAVIGATION ends here--><!-- CONTENTS SHOULD ENDS HERE--></body><script>window.jQuery || document.write('<script src="http://design.daksa.co.id/js/vendor/jquery-1.12.0.min.js"><\/script>')</script><script src="http://design.daksa.co.id/js/menu.js"></script><script src="http://design.daksa.co.id/js/plugins.js"></script><script src="http://design.daksa.co.id/js/main.js"></script><script src="http://design.daksa.co.id/js/vendor/footable-standalone.latest/js/footable.min.js"></script><script>$(document).ready(function($) {
+  $("#menu").mmenu({
+    extensions: [ "widescreen", "border-full" , "pagedim-black"],
+    navbars: [
+      {
+        content: [ "<header><a href='http://design.daksa.co.id/'><img src='http://design.daksa.co.id/img/daksa-repo-logo.png'/><h1>DAKSA Design <span>Repository</span></h1></a></header>" ],
+        height: 2,
+        position: "top"
+      }, {
+        content: [ "searchfield" ],
+        height: 2,
+        position: "top"
+      }
+    ],
+    searchfield: {
+      add: true,
+      placeholder: "Search topic here...",
+      resultsPanel: true,
+      showTextItems: true
+    }
+  }, {
+    searchfield: {
+      clear: true
+    }
+  });
+
+  $(".mm-selected").click(function() {
+    return false;
+  });
+
+  /* $(".table").footable({
+    showToggle: true
+  }); */
+
+  /* $("#content > article:nth-child(1)").css({
+    "min-height": .64 * $(window).height()
+  }); */
+});</script><script>$("#primefaces-overrides-inputs").addClass("mm-selected");
+</script><script src="../../../js/vendor/code-prettify-master/src/prettify.js"></script><script src="../../../js/vendor/clipboard.js-master/dist/clipboard.min.js"></script><script>$(document).ready(function () {
+  $(".primefaces-overrides-source-code").organicTabs();
+  var clipboard = new Clipboard('.button-clipboard');
+});
+
+// Tab Nav
+(function ($) {
+  $.organicTabs = function (el, options) {
+    var base = this;
+    base.$el = $(el);
+    base.$nav = base.$el.find(".nav");
+    base.init = function () {
+      base.options = $.extend({}, $.organicTabs.defaultOptions, options);
+      // Accessible hiding fix
+      $(".hide").css({
+        "position": "relative",
+        "top": 0,
+        "left": 0,
+        "display": "none"
+      });
+      base.$nav.delegate("li > a", "click", function () {
+        // Figure out current list via CSS class
+        var curList = base.$el.find("a.current").attr("href").substring(1),
+          // List moving to
+          $newList = $(this),
+          // Figure out ID of new list
+          listID = $newList.attr("href").substring(1),
+          // Set outer wrapper height to (static) height of current inner list
+          $allListWrap = base.$el.find(".list-wrap"),
+          curListHeight = $allListWrap.height();
+        $allListWrap.height(curListHeight);
+        if ((listID != curList) && ( base.$el.find(":animated").length == 0)) {
+          // Fade out current list
+          base.$el.find("#" + curList).fadeOut(base.options.speed, function () {
+            // Fade in new list on callback
+            base.$el.find("#" + listID).fadeIn(base.options.speed);
+            // Adjust outer wrapper to fit new list snuggly
+            var newHeight = base.$el.find("#" + listID).height();
+            $allListWrap.animate({
+              height: newHeight
+            });
+            // Remove highlighting - Add to just-clicked tab
+            base.$el.find(".nav li a").removeClass("current");
+            $newList.addClass("current");
+          });
+        }
+        // Don't behave like a regular link, stop propegation and bubbling
+        return false;
+      });
+    };
+    base.init();
+  };
+  $.organicTabs.defaultOptions = {
+    "speed": 300
+  };
+  $.fn.organicTabs = function (options) {
+    return this.each(function () {
+      (new $.organicTabs(this, options));
+    });
+  };
+})(jQuery);</script></html>

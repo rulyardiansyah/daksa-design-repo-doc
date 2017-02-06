@@ -1,0 +1,129 @@
+/* =============================================
+DAKSA DESIGN REPO - HOME - ERROR
+============================================= */
+
+@import "_supports/colors";
+
+body {
+  background-color: $daksa-white;
+  color: $daksa-cement;
+  text-align: center;
+}
+
+/* ERROR PAGE begins */
+#error-page {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-60%);
+  padding: 24px;
+  h3 {
+    font-family: "AdobeClean-Light", sans-serif;
+    text-transform: none;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  h6 {
+    font-family: "AdobeClean-Regular", sans-serif;
+    font-size: 16px;
+  }
+}
+#compass {
+  position: relative;
+  display: block;
+  width: 128px;
+  height: 128px;
+  background-color: transparent;
+  border: 8px solid $daksa-cement;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  animation: compass-rotation 2s infinite;
+  &:before {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: -8px;
+    display: block;
+    width: 128px;
+    height: 128px;
+    background-image: url("../img/error-compass-magnet.svg");
+    background-size: cover;
+  }
+}
+@keyframes compass-rotation {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+    transform: rotate(145deg);
+  }
+  75% {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* ERROR PAGE ends */
+
+/* FOOTER begins */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 20px 24px 24px;
+  p {
+    font-size: 13px;
+    margin-bottom: 0;
+    line-height: 120%;
+  }
+  small {
+    font-family: "AdobeClean-Bold", sans-serif;
+  }
+}
+/* FOOTER ends */
+
+
+
+
+/* ====================
+MEDIA QUERIES - TABLET
+==================== */
+@media screen and (min-width: 768px) {
+  footer {
+    bottom: 36px;
+  }
+}
+
+
+
+
+/* ====================
+MEDIA QUERIES - STANDARD SCREEN DESKTOP
+==================== */
+@media screen and (min-width: 1024px) {
+  footer {
+    border-bottom: 64px;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+

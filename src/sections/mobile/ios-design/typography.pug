@@ -1,0 +1,121 @@
+//
+   Created by rulyardiansyah on 1/10/2017.
+
+//- MOBILE DESIGN - iOS - resolutions-displays.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Typography
+          p Hello there.
+
+        hr.article-separator
+
+        article
+          h2 Default Typefaces
+          p The default system typefaces on all iOS versions prior to iOS 9 is Helvetica Neue. With the release of iOS 9, Apple introduced a brand new font called San Francisco, which replaced Helvetica Neue as the default typefaces. San Francisco comes in two shapes: "SF UI Display" and "SF UI Text", while "Display" is primarly used for UI components, "Text" features a wider letter spacing and should be used for longer texts.
+          p You can download the San Francisco fonts <a href="https://developer.apple.com/fonts/">here</a> if you are a member of Apple’s Developer program. In addition to the default font, many alternative font faces are available to use. You can find a complete list of pre-installed typefaces <a href="http://iosfonts.com/">here</a>.
+
+        hr.article-separator
+
+        article
+          h2 Font Sizes
+          p These are various font sizes for typography elements.
+          table.table
+            thead
+              tr
+                th Element
+                th Size (pt)
+                th Weight
+                th Spacing (pt)
+                th Type
+            tbody
+              tr
+                td Nav Bar Title
+                td 17
+                td Medium
+                td 0.5
+                td Display
+              tr
+                td Nav Bar Button
+                td 17
+                td Regular
+                td 0.5
+                td Display
+              tr
+                td Search Bar
+                td 13.5
+                td Regular
+                td 0
+                td Text
+              tr
+                td Tab Bar Button
+                td 10
+                td Regular
+                td 0.1
+                td Text
+              tr
+                td Table Header
+                td 12.5
+                td Regular
+                td 0.25
+                td Text
+              tr
+                td Table Row
+                td 16.5
+                td Regular
+                td 0
+                td Text
+              tr
+                td Table Row Subline
+                td 12
+                td Regular
+                td 0
+                td Text
+              tr
+                td Table Footer
+                td 12.5
+                td Regular
+                td 0.2
+                td Text
+              tr
+                td Action Sheet
+                td 20
+                td Regular/Medium
+                td 0.5
+                td Display
+
+        hr.article-separator
+
+        article
+          h2 Custom Fonts
+          p Technically, any True Type Font (.ttf) can be used within an iOS app, but be careful about licenses. It should be safe to use fonts that are completely free for commercial usage. App licenses for commercial fonts are rarely available, and if they are, securing them can turn out to be somewhat expensive. <a href="https://www.myfonts.com/licensing/app/">MyFonts</a> currently offers the biggest collection of fonts that can be licensed for mobile app usage.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="iconography.html") Iconography
+        nav.next-chapter
+          h4 Next chapter
+          a(href="components.html") Components
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#ios-design-typography").addClass("mm-selected");

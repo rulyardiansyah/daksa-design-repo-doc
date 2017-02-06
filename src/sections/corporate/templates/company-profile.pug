@@ -1,0 +1,45 @@
+//
+   Created by rulyardiansyah on 1/3/2017.
+
+//- CORPORATE - TEMPLATES - company-profile.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Company Profile
+          p Work in progress.
+
+        hr.article-separator
+
+        article
+          h2 Hello
+          p Hello.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="stationery.html") Email Signature
+        nav.next-chapter
+          h4 Next chapter
+          a(href="miscellaneous.html") Miscellaneous
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#corporate-templates-company-profile").addClass("mm-selected");

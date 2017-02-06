@@ -1,0 +1,114 @@
+/* =============================================
+DAKSA DESIGN REPO - SUPPORTS - TYPEFACES
+============================================= */
+
+/* Reminder: http://bit.ly/2cTls5k */
+
+/* PF Handbook Family */
+@font-face {
+	font-family: 'PFHandbookPro-ExtraThin';
+	src: url('../fonts/PFHandbookPro-ExtraThin.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFHandbookPro-Bold';
+	src: url('../fonts/PFHandbookPro-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFHandbookPro-Regular';
+	src: url('../fonts/PFHandbookPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Adobe Clean Family */
+@font-face {
+	font-family: 'AdobeClean-Light';
+	src: url('../fonts/AdobeClean-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AdobeClean-Regular';
+	src: url('../fonts/AdobeClean-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AdobeClean-Bold';
+	src: url('../fonts/AdobeClean-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AdobeClean-SemiCn';
+	src: url('../fonts/AdobeClean-SemiCn.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AdobeClean-BoldSemiCn';
+	src: url('../fonts/AdobeClean-BoldSemiCn.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Roboto Family */
+@font-face {
+	font-family: 'RobotoSlab-Light';
+	src: url('../fonts/RobotoSlab-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Monaco Family */
+@font-face {
+	font-family: 'Monaco';
+	src: url('../fonts/Monaco.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+/* Icon */
+@font-face {
+	font-family: 'Feather';
+	src: url('../fonts/Feather.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* Azisicon Doc */
+@font-face {
+	font-family: 'Azisicon-Doc';
+	src:  url('../fonts/Azisicon-Doc.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+.azisicon-doc {
+	font-family: 'Azisicon-Doc' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.azisicon-doc-download-asset:before {
+	content: "\e900";
+}
+
+
+
+
+
+

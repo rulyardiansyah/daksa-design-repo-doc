@@ -1,0 +1,46 @@
+//- footer.pug
+script window.jQuery || document.write('<script src="http://192.168.1.28/pratpretprot/js/vendor/jquery-1.12.0.min.js"><\/script>')
+script(src="http://192.168.1.28/pratpretprot/js/menu.js")
+script(src="http://192.168.1.28/pratpretprot/js/plugins.js")
+script(src="http://192.168.1.28/pratpretprot/js/main.js")
+script(src="http://192.168.1.28/pratpretprot/js/vendor/footable-standalone.latest/js/footable.min.js")
+script.
+  $(document).ready(function($) {
+    $("#menu").mmenu({
+      extensions: [ "widescreen", "border-full" , "pagedim-black"],
+      navbars: [
+        {
+          content: [ "<header><a href='http://192.168.1.28/pratpretprot/'><img src='http://192.168.1.28/pratpretprot/img/daksa-repo-logo.png'/><h1>DAKSA Design <span>Repository</span></h1></a></header>" ],
+          height: 2,
+          position: "top"
+        }, {
+          content: [ "searchfield" ],
+          height: 2,
+          position: "top"
+        }
+      ],
+      searchfield: {
+        add: true,
+        placeholder: "Search topic here...",
+        resultsPanel: true,
+        showTextItems: true
+      }
+    }, {
+      searchfield: {
+        clear: true
+      }
+    });
+
+    $(".mm-selected").click(function() {
+      return false;
+    });
+
+    /* $(".table").footable({
+      showToggle: true
+    }); */
+
+    /* $("#content > article:nth-child(1)").css({
+      "min-height": .64 * $(window).height()
+    }); */
+  });
+

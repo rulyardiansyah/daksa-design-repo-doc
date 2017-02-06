@@ -1,0 +1,120 @@
+//
+   Created by rulyardiansyah on 12/29/2016.
+
+//- CORPORATE - VISUAL IDENTITY - typography.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Typography
+          p Typefaces is one of the most fundamental (but sadly, the most underrated) design element. A legible and clear readibility of typefaces is a key to make audience feels comfortable with our design.
+          p All of desktop version fonts are OpenType<sup>TM</sup>, a cross-platform format that provides richer linguistic support through widely expanded character sets and advanced layout features.
+
+        hr.article-separator
+
+        article
+          h2 PF Handbook Pro
+          p It is carefully picked for <strong>header</strong>, <strong>headline</strong>, <strong>big caption</strong>, <strong>hero</strong>, <strong>title</strong>, etc..
+          .typefaces-showcase
+            figure
+              img(src="../../../img/corporate/visual-identity-typography-pf-handbook-pro-hero-01.jpg" alt="Corporate typeface - PF Handbook Pro")
+              img(src="../../../img/corporate/visual-identity-typography-pf-handbook-pro-hero-02.png" alt="Corporate typeface - PF Handbook Pro")
+              img(src="../../../img/corporate/visual-identity-typography-pf-handbook-pro-hero-03.png" alt="Corporate typeface - PF Handbook Pro")
+          p While using this typeface, always remember to make it <strong>uppercased</strong>.
+        article
+          .download-section
+            h4 Download PF Handbook Pro
+            a.download-link.alt(href="../../../resources/corporate/typeface-pf-handbook-pro-desktop.zip") PF Handbook Pro (desktop)
+              span (1.43 MB)
+            a.download-link.alt(href="../../../resources/corporate/typeface-pf-handbook-pro-web.zip") PF Handbook Pro (web)
+              span (2.91 MB)
+
+        hr.article-separator
+
+        article
+          h2 Adobe Clean
+          p In most cases, Adobe Clean would dominate any typography elements. It should be picked as <strong>body elements</strong>.
+          .typefaces-showcase
+            figure
+              img(src="../../../img/corporate/visual-identity-typography-adobe-clean-hero-01.jpg" alt="Corporate typeface - Adobe Clean")
+              img(src="../../../img/corporate/visual-identity-typography-adobe-clean-hero-02.png" alt="Corporate typeface - Adobe Clean")
+              img(src="../../../img/corporate/visual-identity-typography-adobe-clean-hero-03.png" alt="Corporate typeface - Adobe Clean")
+        article
+          .download-section
+            h4 Download Adobe Clean
+            a.download-link.alt(href="../../../resources/corporate/typeface-adobe-clean-desktop.zip") Adobe Clean (desktop)
+              span (1.94 MB)
+            a.download-link.alt(href="../../../resources/corporate/typeface-adobe-clean-web.zip") Adobe Clean (web)
+              span (9.89 MB)
+
+        hr.article-separator
+
+        article
+          h2 Monaco
+          p Use Monaco on numeric data type, code snippets, etc..
+          .typefaces-showcase
+            figure
+              img(src="../../../img/corporate/visual-identity-typography-monaco-hero-01.jpg" alt="Corporate typeface - Monaco")
+              img(src="../../../img/corporate/visual-identity-typography-monaco-hero-02.png" alt="Corporate typeface - Monaco")
+              img(src="../../../img/corporate/visual-identity-typography-monaco-hero-03.png" alt="Corporate typeface - Monaco")
+          p Not only its modern look that distinguish on its class, Monaco was designed with better legibility. As you can see on given cases above, the difference that it made between lowercase 'L', uppercase 'I', and number '1' are all nicely done.
+        article
+          .download-section
+            h4 Download Monaco
+            a.download-link.alt(href="../../../resources/corporate/typeface-monaco-desktop.zip") Monaco (desktop)
+              span (39.6 KB)
+            a.download-link.alt(href="../../../resources/corporate/typeface-monaco-web.zip") Monaco (web)
+              span (52.2 KB)
+
+        hr.article-separator
+
+        article
+          h2 Roboto Slab
+          p Use Roboto Slab for quote & conversation sentences only.
+          .typefaces-showcase
+            figure
+              img(src="../../../img/corporate/visual-identity-typography-roboto-slab-hero-01.jpg" alt="Corporate typeface - Roboto Slab")
+              img(src="../../../img/corporate/visual-identity-typography-roboto-slab-hero-02.png" alt="Corporate typeface - Roboto Slab")
+              img(src="../../../img/corporate/visual-identity-typography-roboto-slab-hero-03.png" alt="Corporate typeface - Roboto Slab")
+        article
+          .download-section
+            h4 Download Roboto Slab
+            a.download-link.alt(href="../../../resources/corporate/typeface-roboto-slab-desktop.zip") Roboto Slab (desktop)
+              span (367 KB)
+            a.download-link.alt(href="../../../resources/corporate/typeface-roboto-slab-web.zip") Roboto Slab (web)
+              span (1.46 MB)
+
+        hr.article-separator
+
+        article.note
+          h4 Important
+          p For the sake of web page loading time, you can use <strong>*.woff</strong> file only. Currently, the browsers support for <strong>*.woff</strong> is pretty good, so long as our project does not require support for IE8, Opera Mini, and older versions of Android, then it will be just fine.
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="colors-palette.html") Colors Palette
+        nav.next-chapter
+          h4 Next chapter
+          a(href="imagery.html") Imagery
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#visual-identity-typography").addClass("mm-selected");

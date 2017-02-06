@@ -1,0 +1,185 @@
+//
+   Created by rulyardiansyah on 1/3/2017.
+
+//- CORPORATE - TEMPLATES - document.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    // CONTENTS SHOULD BEGINS HERE
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Document Templates
+          p In this page, we provide several document templates that we frequently used.
+
+        hr.article-separator
+
+        article
+          h2 Quality Control Templates
+          p These are complete lists of document related to QC. If there were any missing document template, please contact DAKSA Design team.
+          table.has-actions
+            thead.sub-header
+              tr
+                th(colspan="3") Testing Documents
+            tbody
+              tr
+                td 1
+                td Berita Acara Operasional
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-berita-acara-operasional.zip").simplified Download
+                    span (.docx - 29.4 KB)
+              tr
+                td 2
+                td Berita Acara PAT
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-berita-acara-pat.zip").simplified Download
+                    span (.docx - 29.1 KB)
+              tr
+                td 3
+                td Berita Acara SIT
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-berita-acara-sit.zip").simplified Download
+                    span (.docx - 28.5 KB)
+              tr
+                td 4
+                td Berita Acara UAT
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-berita-acara-uat.zip").simplified Download
+                    span (.docx - 29 KB)
+              tr
+                td 5
+                td Finding List
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-finding-list.zip").simplified Download
+                    span (.xlsx - 27.2 KB)
+              tr
+                td 6
+                td Internal Test Form
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-internal-test-form.zip").simplified Download
+                    span (.xlsx - 18.2 KB)
+              tr
+                td 7
+                td Internal Test Result
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-internal-test-result.zip").simplified Download
+                    span (.xlsx - 55.7 KB)
+              tr
+                td 8
+                td SIT Result - General
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-sit-result-general.zip").simplified Download
+                    span (.docx - 93.8 KB)
+              tr
+                td 9
+                td SIT Result - Host to host
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-sit-result-host-to-host.zip").simplified Download
+                    span (.docx - 94.6 KB)
+              tr
+                td 10
+                td SIT Scenario - General
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-sit-scenario-general.zip").simplified Download
+                    span (.xlsx - 25.5 KB)
+              tr
+                td 11
+                td SIT Scenario - Host to host
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-sit-scenario-host-to-host.zip").simplified Download
+                    span (.xlsx - 25.4 KB)
+              tr
+                td 12
+                td Test Scenario
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-test-scenario.zip").simplified Download
+                    span (.xlsx - 29.9 KB)
+              tr
+                td 13
+                td UAT Result
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-testing-uat-result.zip").simplified Download
+                    span (.docx - 55.7 KB)
+            thead.sub-header
+              tr
+                th(colspan="3") Maintenance Documents
+            tbody
+              tr
+                td 1
+                td Change Request Progress List
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-maintenance-change-request-progress-list.zip").simplified Download
+                    span (.xlsx - 22.2 KB)
+              tr
+                td 2
+                td Change Request Sign Form
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-maintenance-change-request-sign-form.zip").simplified Download
+                    span (.docx - 71.1 KB)
+            thead.sub-header
+              tr
+                th(colspan="3") Supporting Documents
+            tbody
+              tr
+                td 1
+                td Dokumen Teknis
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-supporting-dokumen-teknis.zip").simplified Download
+                    span (.docx - 97.5 KB)
+              tr
+                td 2
+                td Minutes of Meeting
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-supporting-minutes-of-meeting.zip").simplified Download
+                    span (.docx - 27.1 KB)
+              tr
+                td 3
+                td User Manual
+                td
+                  a.download-link(href="../../../resources/corporate/doc-template-supporting-user-manual.zip").simplified Download
+                    span (.docx - 79.1 KB)
+
+        hr.article-separator
+
+        article
+          h2 Finance Templates
+          p Finance templates.
+          table.table.has-actions
+            thead
+              tr
+                th #
+                th Document Title
+                th Download
+            tbody
+              tr
+                td 1
+                td Laporan Lembur Bulanan
+                td
+                  a.download-link(href="../../../resources/corporate/finance-laporan-lembur-bulanan.zip").simplified Download
+                    span (.docx - 27.1 KB)
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="../products/trojan.html") TROJAN
+        nav.next-chapter
+          h4 Next chapter
+          a(href="presentation.html") Presentation
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#corporate-templates-document-templates").addClass("mm-selected");

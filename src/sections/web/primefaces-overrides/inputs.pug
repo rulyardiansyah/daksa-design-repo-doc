@@ -1,0 +1,955 @@
+//
+   Created by rulyardiansyah on 1/17/2017.
+
+//- WEB-DESKTOP - PRIMEFACES-OVERRIDES - inputs.pug
+doctype html
+html.no-js(lang="")
+  include ../../_include/_header
+  body(onload="prettyPrint()")
+    <!--[if lt IE 8]>
+    p(class="browserupgrade") You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    link(rel="stylesheet" href="../../../js/vendor/code-prettify-master/src/prettify.css")
+    style.
+      .hide {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+    // CONTENTS SHOULD BEGINS HERE
+
+    .container
+      header.header.fixed
+        a(href="#menu") <span></span>
+      section.content#content
+        article
+          h1 Inputs
+          p These are <strike>the almost complete</strike> CSS &amp; Sass selector for Primefaces input components.
+
+        hr.article-separator
+
+        article
+          h4 AutoComplete
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/autoComplete.xhtml" target="_blank">AutoComplete</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-auto-complete-css") CSS
+              li
+                a(href="#inputs-auto-complete-sass") Sass
+            article
+              #inputs-auto-complete-css
+                pre#inputs-auto-complete-css-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - AUTOCOMPLETE */
+                  .ui-autocomplete {
+                  }
+                  .ui-autocomplete .ui-autocomplete-input {
+                  }
+                  .ui-autocomplete .ui-autocomplete-input.ui-state-hover, .ui-autocomplete .ui-autocomplete-input.ui-state-focus {
+                  }
+                  .ui-autocomplete .ui-autocomplete-input.ui-state-disabled {
+                  }
+                  .ui-autocomplete .ui-autocomplete-input.ui-state-disabled:hover {
+                  }
+                  .ui-autocomplete .ui-autocomplete-dropdown, .ui-autocomplete .ui-autocomplete-dropdown.ui-state-hover,
+                  .ui-autocomplete .ui-autocomplete-dropdown.ui-state-focus {
+                  }
+                  .ui-autocomplete .ui-autocomplete-dropdown .ui-icon, .ui-autocomplete .ui-autocomplete-dropdown.ui-state-hover .ui-icon,
+                  .ui-autocomplete .ui-autocomplete-dropdown.ui-state-focus .ui-icon {
+                  }
+                  .ui-autocomplete-panel {
+                  }
+                  .ui-autocomplete-panel .ui-autocomplete-table {
+                  }
+                  .ui-autocomplete-panel .ui-autocomplete-list {
+                  }
+                  .ui-autocomplete-panel .ui-autocomplete-list-item {
+                  }
+                  .ui-autocomplete-panel .ui-autocomplete-list-item.ui-state-highlight {
+                  }
+                  .ui-autocomplete-panel .ui-autocomplete-query {
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-auto-complete-css-selector") Copy CSS Selector
+
+              #inputs-auto-complete-sass.hide
+                pre#inputs-auto-complete-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - AUTOCOMPLETE */
+
+                  .ui-autocomplete {
+                    // CSS properties for this particular class preferably inherited from .ui-inputfield (Input - InputText)
+                    .ui-autocomplete-input {
+                      &.ui-state-hover, &.ui-state-focus {
+                      }
+                      &.ui-state-disabled {
+                        &:hover {
+                        }
+                      }
+                    }
+                    .ui-autocomplete-dropdown, .ui-autocomplete-dropdown.ui-state-hover,
+                    .ui-autocomplete-dropdown.ui-state-focus {
+                      .ui-icon {
+                      }
+                    }
+                  }
+                  .ui-autocomplete-panel {
+                    .ui-autocomplete-table {
+                    }
+                    .ui-autocomplete-list {
+                    }
+                    .ui-autocomplete-list-item {
+                      &.ui-state-highlight {
+                      }
+                    }
+                    .ui-autocomplete-query {
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-auto-complete-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 BooleanButton
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/booleanButton.xhtml" target="_blank">BooleanButton</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-boolean-button-css") CSS
+              li
+                a(href="#inputs-boolean-button-sass") Sass
+            article
+              #inputs-boolean-button-css
+                pre#inputs-boolean-button-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - BOOLEANBUTTON */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-boolean-button-css-selector") Copy CSS Selector
+
+              #inputs-boolean-button-sass.hide
+                pre#inputs-boolean-button-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - BOOLEANBUTTON */
+
+                  .ui-selectbooleanbutton {
+                    &.ui-state-hover, &.ui-state-focus {
+                    }
+                    // CSS properties for this particular class preferably inherited from .ui-button (Button - Button)
+                    &.ui-button {
+                      &.ui-state-default {
+                      }
+                      &.ui-state-hover, &.ui-state-focus {
+                      }
+                      &.ui-state-active {
+                      }
+                      .ui-icon {
+                      }
+                      .ui-button-text {
+                      }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-boolean-button-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 Calendar
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/calendar.xhtml" target="_blank">Calendar</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-calendar-css") CSS
+              li
+                a(href="#inputs-calendar-sass") Sass
+            article
+              #inputs-calendar-css
+                pre#inputs-calendar-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - CALENDAR */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-calendar-css-selector") Copy CSS Selector
+
+              #inputs-calendar-sass.hide
+                pre#inputs-calendar-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - CALENDAR */
+
+                  .ui-calendar {
+                    // CSS properties for this particular class preferably as a copy of .ui-inputfield (Input - InputText)
+                    .ui-inputfield {
+                      &.ui-state-hover, &.ui-state-focus {
+                      }
+                      &.ui-state-disabled {
+                        &:hover {
+                        }
+                      }
+                    }
+                  }
+
+                  .ui-datepicker {
+                    .ui-datepicker-header {
+                    }
+                    .ui-datepicker-prev {
+                      .ui-icon { }
+                    }
+                    .ui-datepicker-next {
+                      .ui-icon { }
+                    }
+                    .ui-datepicker-title {
+                      .ui-datepicker-month { }
+                      .ui-datepicker-year { }
+                    }
+                    .ui-datepicker-calendar {
+                      thead {
+                        tr {
+                        }
+                      }
+                      th {
+                        &.ui-datepicker-week-end { }
+                      }
+                      td {
+                        &.ui-datepicker-week-end {
+                          &:first-child {
+                            a {
+                            }
+                          }
+                        }
+                        &.ui-datepicker-other-month { }
+                        a {
+                          &.ui-state-hover { }
+                          &.ui-state-active {
+                          }
+                          &.ui-state-disabled { }
+                        }
+                      }
+                    }
+                  }
+
+                  .ui-datepicker-trigger {
+                    &.ui-state-hover, &.ui-state-focus { }
+                    &.ui-state-active { }
+                    .ui-icon { }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-calendar-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectOneMenu
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/oneMenu.xhtml" target="_blank">SelectOneMenu</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-one-menu-css") CSS
+              li
+                a(href="#inputs-select-one-menu-sass") Sass
+            article
+              #inputs-select-one-menu-css
+                pre#inputs-select-one-menu-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTONEMENU */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-menu-css-selector") Copy CSS Selector
+
+              #inputs-select-one-menu-sass.hide
+                pre#inputs-select-one-menu-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - SELECTONEMENU */
+
+                  .ui-selectonemenu {
+                    .ui-selectonemenu-label { }
+                    .ui-selectonemenu-trigger {
+                      &.ui-state-hover, &.ui-state-focus { }
+                      &.ui-state-active { }
+                      &.ui-state-disabled { }
+                      .ui-icon { }
+                    }
+                  }
+
+                  .ui-selectonemenu-panel {
+                    .ui-selectonemenu-items-wrapper {
+                    }
+                    .ui-selectonemenu-filter-container {
+                      .ui-icon { }
+                    }
+                    .ui-selectonemenu-filter {
+                    }
+                    .ui-selectonemenu-items {
+                    }
+                    .ui-selectonemenu-table {
+                      td { }
+                    }
+                    .ui-selectonemenu-item-group {
+                    }
+                    .ui-selectonemenu-item {
+                      &.ui-state-hover, &.ui-state-focus { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-menu-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 InputText
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inputText.xhtml" target="_blank">InputText</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-input-text-css") CSS
+              li
+                a(href="#inputs-input-text-sass") Sass
+            article
+              #inputs-input-text-css
+                pre#inputs-input-text-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - INPUTTEXT */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-css-selector") Copy CSS Selector
+
+              #inputs-input-text-sass.hide
+                pre#inputs-input-text-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - INPUTTEXT */
+
+                  .ui-inputfield {
+                    &.ui-state-hover, &.ui-state-focus {
+                    }
+                    &.ui-state-disabled {
+                      &:hover {
+                      }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectManyButton
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/manyButton.xhtml" target="_blank">SelectManyButton</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-many-button-css") CSS
+              li
+                a(href="#inputs-select-many-button-sass") Sass
+            article
+              #inputs-select-many-button-css
+                pre#inputs-select-many-button-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTMANYBUTTON */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-button-css-selector") Copy CSS Selector
+
+              #inputs-select-many-button-sass.hide
+                pre#inputs-select-many-button-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - SELECTMANYBUTTON */
+
+                  .ui-selectmanybutton {
+                    // CSS properties for this particular component should refer to .ui-button (Button - Button)
+                    .ui-button {
+                      &.ui-state-hover, &.ui-state-focus { }
+                      &.ui-state-active { }
+                      &.ui-state-disabled { }
+                      .ui-button-text { }
+                      .ui-icon { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-button-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectManyCheckbox
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/manyCheckbox.xhtml" target="_blank">SelectManyCheckbox</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-many-checkbox-css") CSS
+              li
+                a(href="#inputs-select-many-checkbox-sass") Sass
+            article
+              #inputs-select-many-checkbox-css
+                pre#inputs-select-many-checkbox-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTMANYCHECKBOX */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-checkbox-css-selector") Sass Copy CSS Selector
+
+              #inputs-select-many-checkbox-sass.hide
+                pre#inputs-select-many-checkbox-sass-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - SELECTMANYCHECKBOX */
+
+                  .ui-selectmanycheckbox {
+                    .ui-chkbox {
+                      // CSS properties for this particular component should refer to .ui-chkbox (Input - SelectBooleanCheckbox)
+                      &.ui-state-hover, &.ui-state-focus { }
+                      &.ui-state-active { }
+                      &.ui-state-disabled { }
+                      .ui-chkbox-icon { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-checkbox-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectOneButton
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/oneButton.xhtml" target="_blank">SelectOneButton</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-one-button-css") CSS
+              li
+                a(href="#inputs-select-one-button-sass") Sass
+            article
+              #inputs-select-one-button-css
+                pre#inputs-select-one-button-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTONEBUTTON */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-button-css-selector") Copy CSS Selector
+
+              #inputs-select-one-button-sass.hide
+                pre#inputs-select-one-button-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - SELECTONEBUTTON */
+
+                  .ui-selectonebutton {
+                    .ui-button {
+                      // CSS properties for this particular component should refer to .ui-button (Button - Button)
+                      &.ui-state-hover, &.ui-state-focus { }
+                      &.ui-state-active { }
+                      &.ui-state-disabled { }
+                      .ui-button-text { }
+                      .ui-icon { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-button-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 Slider
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/slider.xhtml">Slider</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-slider-css") CSS
+              li
+                a(href="#inputs-slider-sass") Sass
+            article
+              #inputs-slider-css
+                pre#inputs-slider-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SLIDER */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-slider-css-selector") Copy CSS Selector
+
+              #inputs-slider-sass.hide
+                pre#inputs-slider-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - SLIDER */
+
+                  .ui-slider {
+                    &.ui-slider-horizontal { }
+                    &.ui-slider-vertical { }
+                    .ui-slider-range { }
+                    .ui-slider-handle {
+                      &.ui-state-hover, &.ui-state-focus { }
+                      &.ui-state-active { }
+                      &.ui-state-disabled { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-slider-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 Password
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/password.xhtml">Password</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-password-css") CSS
+              li
+                a(href="#inputs-password-sass") Sass
+            article
+              #inputs-password-css
+                pre#inputs-password-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - PASSWORD */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-password-css-selector") Copy CSS Selector
+
+              #inputs-password-sass.hide
+                pre#inputs-password-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - PASSWORD */
+
+                  // CSS properties for this particular component should refer to .ui-inputfield (Input - InputText)
+                  .ui-password {
+                    &.ui-state-hover, &.ui-state-focus { }
+                    &.ui-state-disabled { }
+                    &.ui-state-error { }
+                  }
+                  .ui-password-panel {
+                    .ui-password-meter { }
+                    .ui-password-info { }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-password-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 Inplace
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inplace.xhtml">Inplace</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-inplace-css") CSS
+              li
+                a(href="#inputs-inplace-sass") Sass
+            article
+              #inputs-inplace-css
+                pre#inputs-inplace-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - INPLACE */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-inplace-css-selector") Copy CSS Selector
+
+              #inputs-inplace-sass.hide
+                pre#inputs-inplace-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - INPLACE */
+
+                  .ui-inplace {
+                    .ui-inplace-display {
+                      &.ui-state-hover, &.ui-state-focus {
+                      }
+                    }
+                    .ui-inplace-content {
+                      .ui-inputfield {
+                        // CSS properties for this particular component should refer to .ui-inputfield (Input - InputText)
+                      }
+                    }
+                    .ui-inplace-editor {
+                      .ui-inplace-save {
+                        .ui-icon { }
+                      }
+                      .ui-inplace-cancel {
+                        .ui-icon { }
+                      }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-inplace-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 InputTextArea
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inputTextarea.xhtml">InputTextArea</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-input-text-area-css") CSS
+              li
+                a(href="#inputs-input-text-area-sass") Sass
+            article
+              #inputs-input-text-area-css
+                pre#inputs-input-text-area-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - INPUTTEXTAREA */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-area-css-selector") Copy CSS Selector
+
+              #inputs-input-text-area-sass.hide
+                pre#inputs-input-text-area-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - INPUTTEXTAREA */
+
+                  .ui-inputtextarea {
+                    &.ui-state-hover, &.ui-state-focus { }
+                    &.ui-state-disabled { }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-input-text-area-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectBooleanCheckbox
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/booleanCheckbox.xhtml">SelectBooleanCheckbox</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-boolean-checkbox-css") CSS
+              li
+                a(href="#inputs-select-boolean-checkbox-sass") Sass
+            article
+              #inputs-select-boolean-checkbox-css
+                pre#inputs-select-boolean-checkbox-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTBOOLEANCHECKBOX */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-boolean-checkbox-css-selector") Copy CSS Selector
+
+              #inputs-select-boolean-checkbox-sass.hide
+                pre#inputs-select-boolean-checkbox-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - SELECTBOOLEANCHECKBOX */
+
+                  .ui-chkbox {
+                    &.ui-state-hover, &.ui-state-focus { }
+                    &.ui-state-active { }
+                    &.ui-state-disabled { }
+                    .ui-chkbox-icon { }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-boolean-checkbox-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 Editor <span class="label warning">Deprecated</span>
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/editor.xhtml">Editor</a> component. As you can check on the link, this component is deprecated, use <a href="http://www.primefaces.org/showcase/ui/input/textEditor.xhtml">TextEditor</a> instead.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-editor-css") CSS
+              li
+                a(href="#inputs-editor-sass") Sass
+            article
+              #inputs-editor-css
+                pre#inputs-editor-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - EDITOR */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-editor-css-selector") Copy CSS Selector
+
+              #inputs-editor-sass.hide
+                pre#inputs-editor-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - EDITOR */
+
+                  .ui-editor {
+                    iframe { }
+                  }
+                  .ui-editor-toolbar {
+                  }
+                  .ui-editor-group {
+                  }
+                  .ui-editor-button {
+                    &.ui-state-hover, &.ui-state-focus { }
+                    &.ui-state-disabled { }
+                    &[title="Bold"] { }
+                    &[title="Italic"] { }
+                    &[title="Underline"] { }
+                    &[title="Strikethrough"] { }
+                    &[title="Subscript"] { }
+                    &[title="Superscript"] { }
+                    &[title="Font"] { }
+                    &[title="Font Size"] { }
+                    &[title="Style"] { }
+                    &[title="Font Color"] { }
+                    &[title="Text Highlight Color"] { }
+                    &[title="Remove Formatting"] { }
+                    &[title="Bullets"] { }
+                    &[title="Numbering"] { }
+                    &[title="Outdent"] { }
+                    &[title="Indent"] { }
+                    &[title="Align Text Left"] { }
+                    &[title="Center"] { }
+                    &[title="Align Text Right"] { }
+                    &[title="Justify"] { }
+                    &[title="Undo"] { }
+                    &[title="Redo"] { }
+                    &[title="Insert Horizontal Rule"] { }
+                    &[title="Insert Image"] { }
+                    &[title="Insert Hyperlink"] { }
+                    &[title="Remove Hyperlink"] { }
+                    &[title="Cut"] { }
+                    &[title="Copy"] { }
+                    &[title="Paste"] { }
+                    &[title="Paste as Text"] { }
+                    &[title="Print"] { }
+                    &[title="Show Source"] { }
+                  }
+                  .ui-editor-divider {
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-editor-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 TextEditor
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/textEditor.xhtml">TextEditor</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-text-editor-css") CSS
+              li
+                a(href="#inputs-text-editor-sass") Sass
+            article
+              #inputs-text-editor-css
+                pre#inputs-text-editor-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - TEXTEDITOR */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-text-editor-css-selector") Copy CSS Selector
+
+              #inputs-text-editor-sass.hide
+                pre#inputs-text-editor-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - TEXTEDITOR */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-text-editor-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectOneListBox
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/listbox.xhtml">SelectOneListBox</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-one-list-box-css") CSS
+              li
+                a(href="#inputs-select-one-list-box-sass") Sass
+            article
+              #inputs-select-one-list-box-css
+                pre#inputs-select-one-list-box-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTONELISTBOX */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-list-box-css-selector") Copy CSS Selector
+
+              #inputs-select-one-list-box-sass.hide
+                pre#inputs-select-one-list-box-sass-selector.prettyprint.lang-css.linenums.
+                  /* Sass INPUT - SELECTONELISTBOX */
+
+                  .ui-selectonelistbox {
+                    .ui-selectlistbox-listcontainer {
+                    }
+                    .ui-selectlistbox-list {
+                    }
+                    .ui-selectlistbox-item {
+                      &.ui-state-hover { }
+                      &.ui-state-highlight { }
+                    }
+                  }
+                  .ui-selectlistbox-filter-container {
+                    .ui-selectlistbox-filter {
+                      &.ui-state-hover, &.ui-state-focus { }
+                    }
+                    .ui-icon { }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-list-box-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectManyMenu
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/manyMenu.xhtml">SelectManyMenu</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-many-menu-css") CSS
+              li
+                a(href="#inputs-select-many-menu-sass") Sass
+            article
+              #inputs-select-many-menu-css
+                pre#inputs-select-many-menu-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTMANYMENU */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-menu-css-selector") Copy CSS Selector
+
+              #inputs-select-many-menu-sass.hide
+                pre#inputs-select-many-menu-sass-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - SELECTMANYMENU */
+
+                  .ui-selectmanymenu {
+                    .ui-selectlistbox-listcontainer {
+                    }
+                    .ui-selectlistbox-list {
+                    }
+                    .ui-selectlistbox-item {
+                      &.ui-state-hover { }
+                      &.ui-state-highlight { }
+                    }
+                  }
+                  .ui-selectlistbox-filter-container {
+                    .ui-selectlistbox-filter {
+                      &.ui-state-hover, &.ui-state-focus { }
+                    }
+                    .ui-icon { }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-many-menu-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 SelectOneRadio
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/oneRadio.xhtml">SelectOneRadio</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-select-one-radio-css") CSS
+              li
+                a(href="#inputs-select-one-radio-sass") Sass
+            article
+              #inputs-select-one-radio-css
+                pre#inputs-select-one-radio-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SELECTONERADIO */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-radio-css-selector") Copy CSS Selector
+
+              #inputs-select-one-radio-sass.hide
+                pre#inputs-select-one-radio-sass-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - SELECTONERADIO */
+
+                  .ui-selectoneradio {
+                  }
+                  .ui-radiobutton {
+                    .ui-radiobutton-box {
+                      &.ui-state-hover, &.ui-state-focus { }
+                      &.ui-state-active { }
+                    }
+                    .ui-radiobutton-icon {
+                      &.ui-icon-bullet { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-select-one-radio-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 Spinner
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/spinner.xhtml">Spinner</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-spinner-css") CSS
+              li
+                a(href="#inputs-spinner-sass") Sass
+            article
+              #inputs-spinner-css
+                pre#inputs-spinner-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - SPINNER */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-spinner-css-selector") Copy CSS Selector
+
+              #inputs-spinner-sass.hide
+                pre#inputs-spinner-sass-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - SPINNER */
+
+                  .ui-spinner {
+                    .ui-spinner-button {
+                      &.ui-spinner-up { }
+                      &.ui-spinner-down { }
+                      .ui-icon { }
+                    }
+                  }
+                  .ui-spinner-input {
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-spinner-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 InputSwitch
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/input/inputSwitch.xhtml">InputSwitch</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-input-switch-css") CSS
+              li
+                a(href="#inputs-input-switch-sass") Sass
+            article
+              #inputs-input-switch-css
+                pre#inputs-input-switch-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - INPUTSWITCH */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-input-switch-css-selector") Copy CSS Selector
+
+              #inputs-input-switch-sass.hide
+                pre#inputs-input-switch-sass-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - INPUTSWITCH */
+
+                  .ui-inputswitch {
+                    .ui-inputswitch-off {
+                      span { }
+                    }
+                    .ui-inputswitch-on {
+                      span { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-input-switch-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+        article
+          h4 FileUpload
+          p This is CSS &amp; Sass selector for <a href="http://www.primefaces.org/showcase/ui/file/upload/basic.xhtml">FileUpload</a> component.
+          .primefaces-overrides-source-code
+            ul.nav
+              li
+                a.current(href="#inputs-file-upload-css") CSS
+              li
+                a(href="#inputs-file-upload-sass") Sass
+            article
+              #inputs-file-upload-css
+                pre#inputs-file-upload-css-selector.prettyprint.lang-css.linenums.
+                  /* CSS INPUT - FILEUPLOAD */
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-file-upload-css-selector") Copy CSS Selector
+
+              #inputs-file-upload-sass.hide
+                pre#inputs-file-upload-sass-selector.prettyprint.lang-css.linenums.
+                  /* INPUT - INPUTSWITCH */
+
+                  .ui-inputswitch {
+                    .ui-inputswitch-off {
+                      span { }
+                    }
+                    .ui-inputswitch-on {
+                      span { }
+                    }
+                  }
+                button.button-clipboard(data-clipboard-action="copy" data-clipboard-target="#inputs-file-upload-sass-selector") Copy Sass Selector
+
+        hr.article-separator
+
+      footer.section-nav-chapter
+        nav.prev-chapter
+          h4 Prev chapter
+          a(href="prelude.html") Prelude
+        nav.next-chapter
+          h4 Next chapter
+          a(href="buttons.html") Buttons
+
+    // NAVIGATION begins here
+    include ../../_include/_menu
+    // NAVIGATION ends here
+
+    // CONTENTS SHOULD ENDS HERE
+
+  include ../../_include/_footer
+
+  script.
+    $("#primefaces-overrides-inputs").addClass("mm-selected");
+
+  script(src="../../../js/vendor/code-prettify-master/src/prettify.js")
+  script(src="../../../js/vendor/clipboard.js-master/dist/clipboard.min.js")
+
+  script.
+    $(document).ready(function () {
+      $(".primefaces-overrides-source-code").organicTabs();
+      var clipboard = new Clipboard('.button-clipboard');
+    });
+
+    // Tab Nav
+    (function ($) {
+      $.organicTabs = function (el, options) {
+        var base = this;
+        base.$el = $(el);
+        base.$nav = base.$el.find(".nav");
+        base.init = function () {
+          base.options = $.extend({}, $.organicTabs.defaultOptions, options);
+          // Accessible hiding fix
+          $(".hide").css({
+            "position": "relative",
+            "top": 0,
+            "left": 0,
+            "display": "none"
+          });
+          base.$nav.delegate("li > a", "click", function () {
+            // Figure out current list via CSS class
+            var curList = base.$el.find("a.current").attr("href").substring(1),
+              // List moving to
+              $newList = $(this),
+              // Figure out ID of new list
+              listID = $newList.attr("href").substring(1),
+              // Set outer wrapper height to (static) height of current inner list
+              $allListWrap = base.$el.find(".list-wrap"),
+              curListHeight = $allListWrap.height();
+            $allListWrap.height(curListHeight);
+            if ((listID != curList) && ( base.$el.find(":animated").length == 0)) {
+              // Fade out current list
+              base.$el.find("#" + curList).fadeOut(base.options.speed, function () {
+                // Fade in new list on callback
+                base.$el.find("#" + listID).fadeIn(base.options.speed);
+                // Adjust outer wrapper to fit new list snuggly
+                var newHeight = base.$el.find("#" + listID).height();
+                $allListWrap.animate({
+                  height: newHeight
+                });
+                // Remove highlighting - Add to just-clicked tab
+                base.$el.find(".nav li a").removeClass("current");
+                $newList.addClass("current");
+              });
+            }
+            // Don't behave like a regular link, stop propegation and bubbling
+            return false;
+          });
+        };
+        base.init();
+      };
+      $.organicTabs.defaultOptions = {
+        "speed": 300
+      };
+      $.fn.organicTabs = function (options) {
+        return this.each(function () {
+          (new $.organicTabs(this, options));
+        });
+      };
+    })(jQuery);
